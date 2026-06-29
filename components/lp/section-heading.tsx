@@ -6,6 +6,7 @@ interface SectionHeadingProps {
   description?: React.ReactNode
   className?: string
   align?: 'left' | 'center'
+  light?: boolean
 }
 
 export function SectionHeading({
@@ -14,6 +15,7 @@ export function SectionHeading({
   description,
   className,
   align = 'center',
+  light = false,
 }: SectionHeadingProps) {
   return (
     <div
@@ -24,18 +26,25 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-electric">
-          <span className="h-px w-6 bg-cyan" />
+        <span className={cn(
+          'font-display text-xs font-semibold uppercase tracking-[0.25em]',
+          light ? 'text-gold-light' : 'text-gold',
+        )}>
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="text-balance font-heading text-2xl font-extrabold leading-tight text-navy sm:text-3xl md:text-4xl">
+      <h2 className={cn(
+        'text-balance font-heading text-2xl font-bold leading-tight sm:text-3xl md:text-4xl',
+        light ? 'text-white' : 'text-navy',
+      )}>
         {title}
       </h2>
+      <span className={cn('gold-line', align === 'left' && 'gold-line-left')} aria-hidden="true" />
       {description ? (
         <p
           className={cn(
-            'max-w-2xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base',
+            'mt-1 max-w-2xl text-pretty text-sm leading-relaxed sm:text-base',
+            light ? 'text-ink-foreground/80' : 'text-muted-foreground',
             align === 'center' ? 'mx-auto' : '',
           )}
         >

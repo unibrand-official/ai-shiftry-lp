@@ -3,19 +3,19 @@ import { ArrowRight } from 'lucide-react'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[#E2DDD6] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link href="#top" className="flex flex-col leading-none">
-          <span className="font-heading text-lg font-black tracking-tight text-navy sm:text-xl">
+          <span className="font-heading text-lg font-bold tracking-tight text-navy sm:text-xl">
             AI SHIFTRY
           </span>
-          <span className="text-[10px] font-medium tracking-[0.2em] text-muted-foreground">
+          <span className="font-display text-[10px] tracking-[0.25em] text-gold">
             エーアイ・シフトリー
           </span>
         </Link>
         <Link
           href="#contact"
-          className="bg-cta-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 sm:px-5 sm:text-sm"
+          className="bg-cta-gradient inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:text-sm"
         >
           無料相談
           <ArrowRight className="size-4" />

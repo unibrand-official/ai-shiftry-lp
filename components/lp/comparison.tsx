@@ -31,7 +31,7 @@ const rows = [
 
 export function Comparison() {
   return (
-    <section className="bg-surface py-16 sm:py-20" aria-labelledby="comparison-heading">
+    <section className="bg-beige py-16 sm:py-20" aria-labelledby="comparison-heading">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="DIFFERENCE"

@@ -14,7 +14,7 @@ export async function Faq() {
   const faqs = await getFaqs()
 
   return (
-    <section className="bg-surface py-16 sm:py-20" aria-labelledby="faq-heading">
+    <section className="bg-beige py-16 sm:py-20" aria-labelledby="faq-heading">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <SectionHeading eyebrow="FAQ" title={<span id="faq-heading">よくあるご質問</span>} />
 

@@ -21,7 +21,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="bg-surface py-16 sm:py-20" aria-labelledby="benefits-heading">
+    <section className="bg-gray-lp py-16 sm:py-20" aria-labelledby="benefits-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="BENEFITS"

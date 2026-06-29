@@ -14,7 +14,7 @@ export async function Testimonials() {
   const voices = await getTestimonials()
 
   return (
-    <section className="bg-surface py-16 sm:py-20" aria-labelledby="voices-heading">
+    <section className="bg-white py-16 sm:py-20" aria-labelledby="voices-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="VOICE"

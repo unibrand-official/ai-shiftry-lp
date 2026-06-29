@@ -5,24 +5,21 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-noto-sans-jp), var(--font-sans);
-  --font-sans: var(--font-noto-sans-jp), var(--font-geist-sans), 'Geist Fallback';
+  --font-heading: var(--font-shippori-mincho), var(--font-noto-serif-jp), serif;
+  --font-sans: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic ProN', sans-serif;
   --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  --font-display: var(--font-cormorant), var(--font-playfair), serif;
 
-  /* AI SHIFTRY brand palette */
-  --color-ink: #0a1326;
-  --color-ink-2: #0e1e3d;
-  --color-navy: #0f2e6d;
-  --color-electric: #1f63ff;
-  --color-cyan: #5fd3ff;
-  --color-cyan-2: #22d3ee;
-  --color-glow: #3da5ff;
-  --color-gold: #f0a020;
-  --color-gold-light: #ffd45e;
-  --color-success: #2f855a;
-  --color-alert: #ff7a00;
-  --color-surface: #eef2f8;
-  --color-ink-foreground: #e6eefc;
+  /* AI SHIFTRY brand palette — Premium Seminar */
+  --color-navy:      #0D1B45;
+  --color-bordeaux:  #8E1B1B;
+  --color-gold:      #C9A14A;
+  --color-gold-light:#E8C97A;
+  --color-beige:     #F8F6F2;
+  --color-gray-lp:   #F3F5F7;
+  --color-ink:       #0D1B45;
+  --color-ink-foreground: #EAE6DC;
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -66,29 +63,29 @@
 :root {
   color-scheme: light;
   --background: #ffffff;
-  --foreground: #1e293b;
+  --foreground: #1a1a2e;
   --card: #ffffff;
-  --card-foreground: #1e293b;
+  --card-foreground: #1a1a2e;
   --popover: #ffffff;
-  --popover-foreground: #1e293b;
-  --primary: #1f63ff;
+  --popover-foreground: #1a1a2e;
+  --primary: #C9A14A;
   --primary-foreground: #ffffff;
-  --secondary: #eef2f8;
-  --secondary-foreground: #0f2e6d;
-  --muted: #eef2f8;
-  --muted-foreground: #5b6b86;
-  --accent: #e7f0ff;
-  --accent-foreground: #0f2e6d;
-  --destructive: #ff7a00;
-  --border: #dbe3f0;
-  --input: #dbe3f0;
-  --ring: #1f63ff;
+  --secondary: #F8F6F2;
+  --secondary-foreground: #0D1B45;
+  --muted: #F3F5F7;
+  --muted-foreground: #6b7080;
+  --accent: #F8F6F2;
+  --accent-foreground: #0D1B45;
+  --destructive: #8E1B1B;
+  --border: #E2DDD6;
+  --input: #E2DDD6;
+  --ring: #C9A14A;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
+  --radius: 1rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -97,78 +94,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  color-scheme: dark;
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    color-scheme: dark;
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
-  }
 }
 
 @layer base {
@@ -183,92 +108,91 @@
   }
 }
 
-.bg-ink-gradient {
-  background-color: #0a1326;
-  background-image: linear-gradient(160deg, #0a1326 0%, #0e1e3d 55%, #13284c 100%);
+/* ====== Background utilities ====== */
+.bg-navy-gradient {
+  background: linear-gradient(135deg, #0D1B45 0%, #162050 50%, #0a1535 100%);
 }
 
 .bg-cta-gradient {
-  background-image: linear-gradient(90deg, #1f63ff 0%, #2e8bff 100%);
+  background: linear-gradient(135deg, #8E1B1B 0%, #6B1414 100%);
 }
 
-/* light-blue advertising LP backdrop */
-.bg-lp-light {
-  background-color: #f4f8ff;
-  background-image: linear-gradient(170deg, #eaf2ff 0%, #f4f8ff 45%, #ffffff 100%);
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C9A14A 0%, #E8C97A 50%, #C9A14A 100%);
 }
 
-/* ribbon-style banner with notched ends */
+.bg-beige {
+  background-color: #F8F6F2;
+}
+
+.bg-gray-lp {
+  background-color: #F3F5F7;
+}
+
+/* ====== Card styles ====== */
+.card-premium {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px -8px rgba(13, 27, 69, 0.12), 0 1px 3px rgba(13, 27, 69, 0.06);
+  border-top: 3px solid #C9A14A;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px rgba(13, 27, 69, 0.2), 0 2px 6px rgba(13, 27, 69, 0.08);
+}
+
+/* ====== Gold line decorations ====== */
+.gold-line {
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(90deg, #C9A14A, #E8C97A);
+  margin: 0.75rem auto 0;
+}
+.gold-line-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ====== Shadow utilities ====== */
+.shadow-soft {
+  box-shadow: 0 1px 2px rgba(13, 27, 69, 0.04), 0 8px 24px -8px rgba(13, 27, 69, 0.12);
+}
+.shadow-soft-lg {
+  box-shadow: 0 2px 4px rgba(13, 27, 69, 0.05), 0 16px 48px -16px rgba(13, 27, 69, 0.2);
+}
+
+/* ====== Text styles ====== */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A14A, #E8C97A, #C9A14A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(201, 161, 74, 0.4);
+}
+
+/* ====== Ribbon banner ====== */
 .ribbon-banner {
   clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 50%, 100% 100%, 0 100%, 14px 50%);
 }
 
-/* brighter dot grid for the ad LP */
-.bg-dot-grid-blue {
-  background-image: radial-gradient(rgba(31, 99, 255, 0.16) 1.4px, transparent 1.4px);
-  background-size: 20px 20px;
-}
-
+/* ====== Dot grid ====== */
 .bg-dot-grid {
-  background-image: radial-gradient(rgba(95, 211, 255, 0.14) 1px, transparent 1px);
-  background-size: 22px 22px;
+  background-image: radial-gradient(rgba(201, 161, 74, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-.glow-cyan {
-  box-shadow: 0 0 0 1px rgba(95, 211, 255, 0.25), 0 12px 40px -8px rgba(46, 139, 255, 0.55);
-}
-
-.text-glow {
-  text-shadow: 0 0 22px rgba(95, 211, 255, 0.45);
-}
-
-/* Futuristic hero/section backdrop image with dark overlay for legibility */
+/* ====== Background image overlay ====== */
 .bg-tech {
   position: relative;
-  background-color: #0a1326;
+  background-color: #0D1B45;
 }
 .bg-tech > .bg-tech-overlay {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(150deg, rgba(10, 19, 38, 0.92) 0%, rgba(14, 30, 61, 0.82) 50%, rgba(19, 40, 76, 0.9) 100%),
-    url('/images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(150deg, rgba(13, 27, 69, 0.95) 0%, rgba(13, 27, 69, 0.85) 60%, rgba(13, 27, 69, 0.92) 100%);
   pointer-events: none;
-}
-.bg-tech-soft > .bg-tech-overlay {
-  background-image:
-    linear-gradient(150deg, rgba(10, 19, 38, 0.96) 0%, rgba(14, 30, 61, 0.9) 60%, rgba(19, 40, 76, 0.94) 100%),
-    url('/images/hero-bg.png');
-}
-
-/* Light, clean futuristic backdrop — white base with airy tech imagery */
-.bg-tech-light {
-  position: relative;
-  background-color: #ffffff;
-}
-.bg-tech-light > .bg-tech-overlay {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.86) 0%, rgba(238, 245, 255, 0.78) 55%, rgba(255, 255, 255, 0.9) 100%),
-    url('/images/hero-bg-light.png');
-  background-size: cover;
-  background-position: center;
-  pointer-events: none;
-}
-
-/* light dot grid for white sections */
-.bg-dot-grid-light {
-  background-image: radial-gradient(rgba(46, 139, 255, 0.12) 1px, transparent 1px);
-  background-size: 22px 22px;
-}
-
-/* soft premium card shadow for light theme */
-.shadow-soft {
-  box-shadow: 0 1px 2px rgba(19, 40, 76, 0.04), 0 12px 32px -12px rgba(19, 40, 76, 0.16);
-}
-.shadow-soft-lg {
-  box-shadow: 0 2px 4px rgba(19, 40, 76, 0.05), 0 24px 60px -20px rgba(46, 139, 255, 0.32);
 }

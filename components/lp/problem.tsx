@@ -12,7 +12,7 @@ const problems = [
 
 export function Problem() {
   return (
-    <section className="bg-surface py-16 sm:py-20" aria-labelledby="problem-heading">
+    <section className="bg-white py-16 sm:py-20" aria-labelledby="problem-heading">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="PROBLEM"
@@ -29,9 +29,9 @@ export function Problem() {
           {problems.map((p) => (
             <li
               key={p}
-              className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"
+              className="card-premium flex items-start gap-3 bg-white p-5"
             >
-              <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-alert/10 text-alert">
+              <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-bordeaux/10 text-bordeaux">
                 <Check className="size-4" />
               </span>
               <span className="text-pretty text-sm leading-relaxed text-card-foreground">{p}</span>

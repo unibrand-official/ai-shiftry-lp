@@ -2,7 +2,7 @@ import { AlertTriangle } from 'lucide-react'
 
 export function SubsidyHook() {
   return (
-    <section className="relative overflow-hidden bg-white py-12 sm:py-16" aria-labelledby="subsidy-heading">
+    <section className="relative overflow-hidden bg-beige py-12 sm:py-16" aria-labelledby="subsidy-heading">
       <div className="bg-dot-grid-light pointer-events-none absolute inset-0 opacity-50" aria-hidden="true" />
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center sm:px-6">
         <span className="inline-flex items-center gap-2 rounded-full bg-alert px-4 py-1.5 text-xs font-bold text-white">
@@ -24,12 +24,12 @@ export function SubsidyHook() {
 
           <div className="flex flex-col items-center">
             <span className="text-xs text-muted-foreground">助成率</span>
-            <span className="font-heading text-5xl font-black leading-none text-electric sm:text-6xl">
+            <span className="font-heading text-5xl font-black leading-none text-bordeaux sm:text-6xl">
               最大75<span className="text-2xl sm:text-3xl">%</span>
             </span>
           </div>
 
-          <span className="font-heading text-3xl font-black text-electric sm:text-4xl">→</span>
+          <span className="font-heading text-3xl font-black text-navy sm:text-4xl">→</span>
 
           <div className="flex flex-col items-center rounded-2xl border border-gold/40 bg-gold/10 px-6 py-3">
             <span className="text-xs font-semibold text-gold">実質</span>
