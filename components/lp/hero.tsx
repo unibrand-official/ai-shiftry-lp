@@ -6,21 +6,21 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-navy"
+      className="relative overflow-hidden"
       aria-labelledby="hero-heading"
-      style={{ backgroundColor: '#0D1B45' }}
+      style={{ background: 'linear-gradient(135deg, #6B0F0F 0%, #8E1B1B 30%, #C0354A 65%, #D4607A 100%)' }}
     >
       {/* Decorative gold dot grid */}
       <div className="bg-dot-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       {/* Gold glow */}
       <div
         className="pointer-events-none absolute -right-40 top-0 h-[36rem] w-[36rem] rounded-full blur-3xl"
-        style={{ background: 'radial-gradient(circle, rgba(201,161,74,0.12) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(255,200,200,0.18) 0%, transparent 70%)' }}
         aria-hidden="true"
       />
       <div
         className="pointer-events-none absolute -left-32 bottom-0 h-[28rem] w-[28rem] rounded-full blur-3xl"
-        style={{ background: 'radial-gradient(circle, rgba(142,27,27,0.15) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(255,220,150,0.15) 0%, transparent 70%)' }}
         aria-hidden="true"
       />
 
@@ -107,7 +107,7 @@ export function Hero() {
               </p>
               <span
                 className="absolute -bottom-3 left-1/2 size-5 -translate-x-1/2 rotate-45 border-b border-r border-gold/40 bg-navy"
-                style={{ backgroundColor: '#0D1B45' }}
+                style={{ backgroundColor: '#6B0F0F' }}
                 aria-hidden="true"
               />
             </div>
@@ -143,7 +143,7 @@ export function Hero() {
       </div>
 
       {/* Bottom gift strip */}
-      <div className="relative mt-4 border-t border-gold/20 bg-white/5 py-5">
+      <div className="relative mt-4 border-t border-gold/30 py-5" style={{ background: 'rgba(0,0,0,0.25)' }}>
         <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 px-4 sm:gap-4">
           <Gift className="size-8 shrink-0 text-gold sm:size-9" aria-hidden="true" />
           <p className="text-sm font-bold leading-relaxed text-white sm:text-base">
