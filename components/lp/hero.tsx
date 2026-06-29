@@ -1,158 +1,223 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { Gift, ChevronRight, MonitorPlay } from 'lucide-react'
+import { Gift, MonitorPlay, ChevronRight } from 'lucide-react'
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden"
       aria-labelledby="hero-heading"
-      style={{ background: 'linear-gradient(135deg, #6B0F0F 0%, #8E1B1B 30%, #C0354A 65%, #D4607A 100%)' }}
+      style={{
+        backgroundImage: "url('/images/hero-bg-red.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
     >
-      {/* Decorative gold dot grid */}
-      <div className="bg-dot-grid pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
-      {/* Gold glow */}
+      {/* Overlay for text legibility */}
       <div
-        className="pointer-events-none absolute -right-40 top-0 h-[36rem] w-[36rem] rounded-full blur-3xl"
-        style={{ background: 'radial-gradient(circle, rgba(255,200,200,0.18) 0%, transparent 70%)' }}
         aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute -left-32 bottom-0 h-[28rem] w-[28rem] rounded-full blur-3xl"
-        style={{ background: 'radial-gradient(circle, rgba(255,220,150,0.15) 0%, transparent 70%)' }}
-        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(90deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 60%, transparent 100%)',
+          pointerEvents: 'none',
+        }}
       />
 
-      <div className="relative mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-8">
-        <div className="grid items-end gap-6 lg:grid-cols-[1.3fr_0.9fr] lg:gap-4">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '55% 45%',
+            alignItems: 'flex-end',
+            gap: '1rem',
+          }}
+          className="hero-grid"
+        >
+          {/* ====== LEFT: テキストエリア ====== */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingTop: '2rem', paddingBottom: '2rem' }}>
 
-          {/* ====== LEFT ====== */}
-          <div className="flex flex-col gap-5 pb-4 text-left">
-
-            {/* Badge */}
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-2">
-              <Gift className="size-4 text-gold" aria-hidden="true" />
-              <span className="text-xs font-bold tracking-wide text-gold sm:text-sm">
-                無料配布中｜AI業務改善事例10選
-              </span>
-            </div>
-
-            {/* Main copy */}
-            <div className="flex flex-col gap-2">
-              <p className="font-display text-base font-semibold tracking-[0.15em] text-gold sm:text-lg">
-                業務効率化 × AIセミナー
-              </p>
-              <h1
-                id="hero-heading"
-                className="font-heading font-bold leading-[1.1] text-white"
-              >
-                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[3.2rem]">
-                  ChatGPTに相談で
-                </span>
-                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[3.2rem]">
-                  終わってない？
-                </span>
-              </h1>
-              <p className="mt-1 text-base font-medium text-ink-foreground/80 sm:text-lg">
-                AIを「使える」に変える実践研修
-              </p>
-            </div>
-
-            {/* Gold divider */}
-            <span className="gold-line gold-line-left" aria-hidden="true" />
-
-            {/* Stats */}
-            <div className="flex flex-wrap gap-x-6 gap-y-3">
-              {[
-                { num: '12万人', label: '利用実績' },
-                { num: '最大75%', label: '補助対象' },
-                { num: '実質9万円～', label: '研修費' },
-              ].map((s) => (
-                <div key={s.label} className="flex flex-col">
-                  <span className="font-heading text-2xl font-bold text-gold sm:text-3xl">{s.num}</span>
-                  <span className="text-xs text-ink-foreground/60">{s.label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* CTA buttons */}
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Link
-                href="#contact"
-                className="bg-gold-gradient group inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-bold text-navy shadow-soft-lg transition-all duration-200 hover:-translate-y-0.5 sm:text-base"
-              >
-                無料で事例10選を受け取る
-                <ChevronRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-              </Link>
-              <Link
-                href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 py-4 text-sm font-bold text-white transition-all duration-200 hover:border-gold/50 hover:text-gold sm:text-base"
-              >
-                <MonitorPlay className="size-4" />
-                オンライン説明会に参加する
-              </Link>
-            </div>
-          </div>
-
-          {/* ====== RIGHT — instructor photo ====== */}
-          <div className="flex flex-col items-center gap-3">
-            {/* Speech bubble */}
-            <div className="relative z-20 w-fit max-w-[18rem] rounded-2xl border border-gold/40 bg-white/10 px-5 py-4 text-center backdrop-blur-sm sm:max-w-[20rem]">
-              <p className="text-sm font-bold leading-relaxed text-white sm:text-base">
-                ツール活用に留まらない！
-                <br />
-                <span className="text-gold">成果から逆算して利益を出す方法</span>
-                を教えます！
-              </p>
-              <span
-                className="absolute -bottom-3 left-1/2 size-5 -translate-x-1/2 rotate-45 border-b border-r border-gold/40 bg-navy"
-                style={{ backgroundColor: '#6B0F0F' }}
-                aria-hidden="true"
-              />
-            </div>
-
-            {/* Photo */}
-            <div className="w-full max-w-[28rem] sm:w-[115%] sm:max-w-none lg:-mx-[5%]">
+            {/* バナー画像 */}
+            <div style={{ position: 'relative', zIndex: 10 }}>
               <Image
-                src="/images/kayahara_cutout.png"
-                alt="栢原 陽子（株式会社UNIBRAND 代表取締役）"
-                width={1100}
-                height={1100}
+                src="/images/banner-jirei.png"
+                alt="無料配布中 AI業務改善事例10選"
+                width={420}
+                height={120}
                 priority
-                className="h-auto w-full object-contain"
+                style={{ width: 'clamp(220px, 50vw, 420px)', height: 'auto' }}
               />
             </div>
 
-            {/* Profile card */}
-            <div className="card-premium w-full max-w-[20rem] bg-white/10 p-4 backdrop-blur-sm">
-              <span className="inline-flex items-center rounded-md bg-gold/20 px-3 py-1 text-xs font-bold text-gold">
-                監修・提供
+            {/* メインコピー */}
+            <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.05 }}>
+              <span style={{
+                display: 'block',
+                fontFamily: '"Noto Serif JP", serif',
+                fontWeight: 900,
+                fontSize: 'clamp(2rem, 5vw, 3.2rem)',
+                color: '#1a0a0a',
+                letterSpacing: '-0.01em',
+              }}>
+                <span style={{ fontFamily: '"Cormorant Garamond", "Playfair Display", serif', color: '#8E1B1B', fontStyle: 'italic' }}>ChatGPT</span>に
               </span>
-              <p className="mt-2 font-heading text-xl font-bold leading-none text-white">
-                栢原 陽子
-                <span className="ml-1 text-xs font-normal text-ink-foreground/60">（かやはら ようこ）</span>
-              </p>
-              <p className="mt-1.5 text-xs font-bold text-ink-foreground/80">株式会社UNIBRAND 代表取締役</p>
-              <p className="text-[11px] leading-relaxed text-ink-foreground/60">
-                中小企業診断士／認定心理士／認定支援機関
-              </p>
+              <span style={{
+                display: 'block',
+                fontFamily: '"Noto Serif JP", serif',
+                fontWeight: 900,
+                fontSize: 'clamp(2rem, 5vw, 3.2rem)',
+                color: '#1a0a0a',
+                letterSpacing: '-0.01em',
+              }}>
+                相談で終わってない？
+              </span>
+            </h1>
+
+            {/* サブコピー */}
+            <p style={{
+              margin: 0,
+              fontFamily: '"Noto Serif JP", serif',
+              fontWeight: 700,
+              fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
+              color: '#1a0a0a',
+              lineHeight: 1.2,
+            }}>
+              <span style={{ color: '#8E1B1B' }}>業務効率化</span> × <span style={{ color: '#8E1B1B' }}>AI</span>セミナー
+            </p>
+
+            {/* 説明文 */}
+            <p style={{
+              margin: 0,
+              fontFamily: '"Noto Sans JP", sans-serif',
+              fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
+              color: '#3a2a2a',
+              letterSpacing: '0.02em',
+            }}>
+              AIを「使える」に変える実践研修
+            </p>
+
+            {/* 月桂樹バッジ */}
+            <div>
+              <Image
+                src="/images/laurel-stats.png"
+                alt="導入実績12万人以上・最大75%補助・実質9万円〜"
+                width={480}
+                height={160}
+                style={{ width: '100%', maxWidth: '480px', height: 'auto' }}
+              />
             </div>
+
+            {/* CTAボタン2つ */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                {/* ゴールドボタン */}
+                <Link
+                  href="#contact"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    height: '88px',
+                    borderRadius: '16px',
+                    background: 'linear-gradient(135deg, #C9A14A 0%, #E8C97A 50%, #C9A14A 100%)',
+                    color: '#3a1a00',
+                    fontFamily: '"Noto Sans JP", sans-serif',
+                    fontWeight: 700,
+                    fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
+                    textDecoration: 'none',
+                    padding: '0 1.25rem',
+                    boxShadow: '0 4px 20px rgba(201,161,74,0.4)',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                    textAlign: 'center',
+                    lineHeight: 1.3,
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = '0 15px 40px rgba(0,0,0,0.25)'
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(201,161,74,0.4)'
+                  }}
+                >
+                  <Gift style={{ width: '1.5rem', height: '1.5rem', flexShrink: 0 }} />
+                  <span>無料で<br />事例10選を受け取る</span>
+                  <ChevronRight style={{ width: '1rem', height: '1rem', flexShrink: 0 }} />
+                </Link>
+
+                {/* ボルドーボタン */}
+                <Link
+                  href="#contact"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    height: '88px',
+                    borderRadius: '16px',
+                    background: 'linear-gradient(135deg, #8E1B1B 0%, #6B0F0F 100%)',
+                    color: '#ffffff',
+                    fontFamily: '"Noto Sans JP", sans-serif',
+                    fontWeight: 700,
+                    fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
+                    textDecoration: 'none',
+                    padding: '0 1.25rem',
+                    boxShadow: '0 4px 20px rgba(142,27,27,0.4)',
+                    border: '1px solid rgba(201,161,74,0.4)',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                    textAlign: 'center',
+                    lineHeight: 1.3,
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = '0 15px 40px rgba(0,0,0,0.25)'
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+                    ;(e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(142,27,27,0.4)'
+                  }}
+                >
+                  <MonitorPlay style={{ width: '1.5rem', height: '1.5rem', flexShrink: 0 }} />
+                  <span>オンライン説明会に<br />参加する</span>
+                  <ChevronRight style={{ width: '1rem', height: '1rem', flexShrink: 0 }} />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* ====== RIGHT: 女性写真 ====== */}
+          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', height: '100%' }}>
+            <Image
+              src="/images/kayahara_cutout.png"
+              alt="栢原 陽子（株式会社UNIBRAND 代表取締役）"
+              width={600}
+              height={800}
+              priority
+              style={{
+                width: '100%',
+                height: 'auto',
+                maxHeight: '90vh',
+                objectFit: 'contain',
+                objectPosition: 'bottom',
+                filter: 'drop-shadow(0 0 40px rgba(255,255,255,0.4))',
+              }}
+            />
           </div>
         </div>
       </div>
 
-      {/* Bottom gift strip */}
-      <div className="relative mt-4 border-t border-gold/30 py-5" style={{ background: 'rgba(0,0,0,0.25)' }}>
-        <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 px-4 sm:gap-4">
-          <Gift className="size-8 shrink-0 text-gold sm:size-9" aria-hidden="true" />
-          <p className="text-sm font-bold leading-relaxed text-white sm:text-base">
-            今なら無料相談者全員に
-            <span className="text-gold">「AI活用事例集10選（PDF）」</span>
-            をプレゼント！
-          </p>
-        </div>
-      </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   )
 }
