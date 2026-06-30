@@ -30,6 +30,10 @@ export function Hero() {
           {/* ====== LEFT ====== */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingTop: '2rem', paddingBottom: '2rem', justifyContent: 'center' }}>
 
+            {/* バナー */}
+            <Image src="/images/banner-jirei.png" alt="無料配布中 AI業務改善事例10選" width={420} height={120} priority
+              style={{ width: 'clamp(200px, 42vw, 400px)', height: 'auto' }} />
+
             {/* 上部帯：ターゲット訴求 */}
             <div style={{
               display: 'inline-flex', alignItems: 'center',
