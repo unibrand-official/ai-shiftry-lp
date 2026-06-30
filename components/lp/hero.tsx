@@ -203,7 +203,7 @@ export function Hero() {
               left: '0', right: '-1.5rem',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
               borderTop: '2px solid #C9A14A',
-              padding: '0.7rem 1.2rem 0.85rem',
+              padding: '0.7rem 0 0.85rem 1.2rem',
               marginBottom: '1.2rem',
               backdropFilter: 'blur(12px)',
               boxShadow: '0 -6px 30px rgba(0,0,0,0.1)',
