@@ -21,16 +21,34 @@ const cormorant = Cormorant_Garamond({
   weight: ['400', '600', '700'],
 })
 
+const siteUrl = 'https://ai-shiftry-lp.vercel.app'
+
 export const metadata: Metadata = {
-  title: 'AI SHIFTRY（エーアイ・シフトリー）| ChatGPTに相談で終わらない。AIを成果につなげる実践セミナー',
+  title: 'AI SHIFTRY｜売上・業務改善につながる実践型AI研修',
   description:
-    '中小企業診断士×認定心理士が伴走する、成果から逆算するAI研修（全10時間）。ツールの使い方ではなく「何を自動化すべきか」を経営視点で見極め、自社の実務で動かすところまで。助成率最大75%活用で、研修40万円→実質9万円/名。',
-  generator: 'v0.app',
+    '中小企業診断士×認定心理士が教える、売上・業務改善につながる実践型AI研修。無料個別相談・AI業務改善事例10選を配布中。',
   keywords: ['AI研修', '中小企業', '生成AI', '人材開発支援助成金', 'リスキリング', '中小企業診断士'],
   openGraph: {
-    title: 'AI SHIFTRY | ChatGPTに相談で終わらない。AIを成果につなげる実践セミナー',
-    description: '中小企業診断士×認定心理士が伴走。助成率最大75%で研修40万円→実質9万円/名。',
+    title: 'AI SHIFTRY｜売上・業務改善につながる実践型AI研修',
+    description:
+      '中小企業診断士×認定心理士が教える、売上・業務改善につながる実践型AI研修。無料個別相談・AI業務改善事例10選を配布中。',
+    url: siteUrl,
+    siteName: 'AI SHIFTRY',
     type: 'website',
+    images: [
+      {
+        url: `${siteUrl}/org.png`,
+        width: 1200,
+        height: 630,
+        alt: 'AI SHIFTRY｜売上・業務改善につながる実践型AI研修',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI SHIFTRY｜売上・業務改善につながる実践型AI研修',
+    description: '中小企業診断士×認定心理士が教える、売上・業務改善につながる実践型AI研修。',
+    images: [`${siteUrl}/org.png`],
   },
 }
 
