@@ -35,7 +35,7 @@ export function Hero() {
               style={{ width: 'clamp(200px, 42vw, 400px)', height: 'auto' }} />
 
             {/* メインコピー */}
-            <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.05 }}>
+            <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.25 }}>
               <span style={{ display: 'block', fontFamily: '"Noto Serif JP", serif', fontWeight: 900, fontSize: 'clamp(2.4rem, 5.5vw, 4rem)', letterSpacing: '-0.01em' }}>
                 <span style={{ fontFamily: '"Cormorant Garamond", "Playfair Display", serif', color: '#8E1B1B', fontStyle: 'italic' }}>ChatGPT</span>
                 <span style={{ color: '#1a0a0a' }}>に</span>
