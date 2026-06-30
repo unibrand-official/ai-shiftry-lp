@@ -23,16 +23,12 @@ export function Header() {
       </div>
 
       <style>{`
-        @keyframes wiggle {
-          0%, 100% { transform: rotate(0deg); }
-          20%       { transform: rotate(-2deg); }
-          40%       { transform: rotate(2deg); }
-          60%       { transform: rotate(-1.5deg); }
-          80%       { transform: rotate(1.5deg); }
+        @keyframes bounce-y {
+          0%, 100% { transform: translateY(0); }
+          50%       { transform: translateY(-5px); }
         }
         .header-cta {
-          animation: wiggle 0.5s ease-in-out 1s 1;
-          transform-origin: center;
+          animation: bounce-y 1.2s ease-in-out infinite;
         }
         .header-cta:hover {
           animation: none;
