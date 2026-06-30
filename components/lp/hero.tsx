@@ -199,7 +199,7 @@ export function Hero() {
               width: '100%',
               background: 'rgba(255,255,255,0.94)',
               borderTop: '3px solid #C9A14A',
-              padding: '1rem 1.4rem',
+              padding: '1.4rem 1.6rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
               transform: 'translateY(-220px)',
@@ -235,21 +235,6 @@ export function Hero() {
                     </span>
                   ))}
                 </div>
-              </div>
-              <div style={{
-                marginTop: '0.6rem', paddingTop: '0.55rem',
-                borderTop: '1px solid #E8C97A',
-                display: 'flex', gap: '1rem',
-              }}>
-                {['累計500社超の経営支援実績', '補助金採択率80%超'].map((text) => (
-                  <p key={text} style={{
-                    margin: 0, fontSize: '0.65rem', fontWeight: 700, color: '#8E1B1B',
-                    fontFamily: '"Noto Sans JP", sans-serif',
-                    display: 'flex', alignItems: 'center', gap: '0.25rem',
-                  }}>
-                    <span style={{ color: '#C9A14A' }}>✦</span> {text}
-                  </p>
-                ))}
               </div>
             </div>
           </div>
