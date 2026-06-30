@@ -179,7 +179,7 @@ export function Hero() {
             <div style={{
               width: '108%', maxWidth: '477px',
               marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-110px)',
+              transform: 'translateY(-10px)',
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
