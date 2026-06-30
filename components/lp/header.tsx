@@ -23,12 +23,16 @@ export function Header() {
       </div>
 
       <style>{`
-        @keyframes bounce-y {
-          0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(-5px); }
+        @keyframes heartbeat {
+          0%    { transform: translateY(0); }
+          3%    { transform: translateY(-5px); }
+          6%    { transform: translateY(0); }
+          9%    { transform: translateY(-3px); }
+          12%   { transform: translateY(0); }
+          100%  { transform: translateY(0); }
         }
         .header-cta {
-          animation: bounce-y 1.2s ease-in-out infinite;
+          animation: heartbeat 10s ease-in-out infinite;
         }
         .header-cta:hover {
           animation: none;
