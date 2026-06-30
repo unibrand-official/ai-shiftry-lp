@@ -41,7 +41,7 @@ export function Footer() {
           fontSize: '0.68rem', lineHeight: 1.8, color: '#aaa',
           fontFamily: '"Noto Sans JP", sans-serif',
         }}>
-          ※数値・事例・料金はモデルケースを含みます。お客様の声はサンプル（差し替え前提）。助成金は要件・審査あり採択保証なし、最新は公式確認。料金は確定前のものを含みます。
+          ※数値・事例・料金はモデルケースを含みます。助成金は要件・審査あり採択保証なし、最新は公式確認。料金は確定前のものを含みます。
         </p>
         <p style={{ marginTop: '0.75rem', fontSize: '0.68rem', color: '#bbb', fontFamily: '"Noto Sans JP", sans-serif' }}>
           © {new Date().getFullYear()} UNIBRAND Inc. All rights reserved.
