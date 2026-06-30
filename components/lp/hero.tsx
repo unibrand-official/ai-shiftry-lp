@@ -63,8 +63,8 @@ export function Hero() {
               borderRadius: '4px',
               fontFamily: '"Noto Sans JP", sans-serif',
               fontWeight: 600,
-              fontSize: 'clamp(11px, 1vw, 14px)',
-              letterSpacing: '0.06em',
+              fontSize: '18px',
+              letterSpacing: '0.04em',
               maxWidth: 'fit-content',
             }}>
               中小企業の売上・業務を劇的に改善したい方へ
@@ -76,7 +76,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(17px, 2.2vw, 28px)',
+                fontSize: 'clamp(28px, 2.5vw, 42px)',
                 color: '#1a0a0a',
                 letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
@@ -89,7 +89,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(42px, 5.2vw, 64px)',
+                fontSize: 'clamp(64px, 5vw, 88px)',
                 color: '#8E1B1B',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.05,
@@ -114,7 +114,7 @@ export function Hero() {
               <span style={{
                 fontFamily: '"Noto Sans JP", sans-serif',
                 fontWeight: 600,
-                fontSize: 'clamp(11px, 1vw, 14px)',
+                fontSize: 'clamp(28px, 2.5vw, 42px)',
                 color: '#3a2e00',
                 letterSpacing: '0.08em',
                 whiteSpace: 'nowrap',
@@ -157,7 +157,7 @@ export function Hero() {
                     <span style={{ fontSize: '0.73rem', fontWeight: 600 }}>AI活用事例10選（PDF）プレゼント</span>
                   </div>
                 </div>
-                <span style={{
+                <span className="cta-arrow" style={{
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   width: '42px', height: '42px', borderRadius: '50%',
                   background: 'rgba(255,255,255,0.28)', flexShrink: 0,
@@ -341,8 +341,9 @@ export function Hero() {
           }
           /* CTA外枠：横幅いっぱい */
           .cta-wrap { width: 100% !important; max-width: 100% !important; }
-          /* CTAアイコン非表示 */
+          /* CTAアイコン・矢印非表示 */
           .cta-icon { display: none !important; }
+          .cta-arrow { display: none !important; }
           /* CTA外枠：中央揃え */
           .cta-wrap {
             width: 100% !important;

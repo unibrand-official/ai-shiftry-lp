@@ -85,7 +85,7 @@ export function Closing() {
               <span style={{ fontSize: '0.73rem', fontWeight: 600 }}>AI活用事例10選（PDF）プレゼント</span>
             </div>
           </div>
-          <span style={{
+          <span className="cta-arrow-closing" style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             width: '42px', height: '42px', borderRadius: '50%',
             background: 'rgba(255,255,255,0.28)', flexShrink: 0,
@@ -98,6 +98,9 @@ export function Closing() {
           .cta-closing:hover {
             transform: translateY(-4px);
             box-shadow: 0 0 0 2px #C9A14A, 0 16px 40px rgba(120,16,16,0.35) !important;
+          }
+          @media (max-width: 768px) {
+            .cta-arrow-closing { display: none !important; }
           }
         `}</style>
       </div>
