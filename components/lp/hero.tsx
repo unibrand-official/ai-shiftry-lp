@@ -318,27 +318,36 @@ export function Hero() {
             white-space: normal !important;
             word-break: break-all !important;
           }
-          /* ③ コピー1行目（中サイズ）：1行固定 */
+          /* ③ コピー1行目（M） */
           .hero-copy-1 {
-            font-size: clamp(16px, 4.5vw, 22px) !important;
-            white-space: nowrap !important;
-            letter-spacing: -0.02em !important;
+            font-size: 18px !important;
+            white-space: normal !important;
+            letter-spacing: -0.01em !important;
             line-height: 1.4 !important;
           }
-          /* ④ コピー2行目（大サイズ） */
+          /* ④ コピー2行目（L） */
           .hero-copy-2 {
-            font-size: clamp(30px, 9vw, 44px) !important;
+            font-size: clamp(36px, 10vw, 48px) !important;
             line-height: 1.1 !important;
             white-space: normal !important;
+            letter-spacing: -0.02em !important;
           }
           /* 専門性見出し：モバイル */
           .hero-gold-band {
             width: 100% !important;
-            padding: 1.2rem 0 !important;
+            padding: 0.8rem 0 !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
           }
           .hero-gold-band span:first-child,
           .hero-gold-band span:last-child {
-            flex: 0 0 24px !important;
+            flex: 0 0 20px !important;
+            width: 20px !important;
+          }
+          .hero-gold-band span:nth-child(2) {
+            font-size: 13px !important;
+            white-space: normal !important;
+            text-align: center !important;
           }
           /* CTA外枠：横幅いっぱい */
           .cta-wrap { width: 100% !important; max-width: 100% !important; }
