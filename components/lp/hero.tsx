@@ -179,7 +179,7 @@ export function Hero() {
             <div className="hero-photo-wrap" style={{
               width: '108%', maxWidth: '477px',
               marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-420px)',
+              transform: 'translateY(-60px)',
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
@@ -194,16 +194,17 @@ export function Hero() {
               />
             </div>
 
-            {/* プロフィールカード：上へ引き上げ */}
+            {/* プロフィールカード：絶対配置 */}
             <div className="hero-card" style={{
-              width: '100%',
+              position: 'absolute',
+              bottom: '0',
+              left: '0', right: '0',
               background: 'rgba(255,255,255,0.94)',
               borderTop: '3px solid #C9A14A',
               padding: '1.4rem 1.6rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
-              transform: 'translateY(-530px)',
-              marginBottom: '-530px',
+              zIndex: 10,
             }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', alignItems: 'start' }}>
                 <div>
