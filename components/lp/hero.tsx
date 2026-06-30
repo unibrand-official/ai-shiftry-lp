@@ -313,6 +313,9 @@ export function Hero() {
             padding: 0.65rem 1rem !important;
             border-radius: 6px !important;
             box-sizing: border-box !important;
+            font-size: clamp(16px, 4.5vw, 22px) !important;
+            white-space: normal !important;
+            word-break: break-all !important;
           }
           /* ③ コピー1行目（中サイズ）：1行固定 */
           .hero-copy-1 {
