@@ -97,7 +97,7 @@ export function Hero() {
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
                 marginTop: '0.1em',
               }}>
-                「売上・業務」に即効！
+                「売上・業務」<br className="sp-br" />に即効！
               </span>
             </h1>
 
@@ -311,27 +311,32 @@ export function Hero() {
             max-width: 100% !important;
             text-align: center !important;
             justify-content: center !important;
-            padding: 0.65rem 1rem !important;
-            border-radius: 6px !important;
+            padding: 0.4rem 0.8rem !important;
+            border-radius: 4px !important;
             box-sizing: border-box !important;
-            font-size: clamp(16px, 4.5vw, 22px) !important;
+            font-size: 13px !important;
             white-space: normal !important;
             word-break: break-all !important;
           }
-          /* ③ コピー1行目（M） */
+          /* スマホのみbrを表示 */
+          .sp-br { display: inline !important; }
+          /* ③ コピー1行目：脇役 */
           .hero-copy-1 {
-            font-size: 15px !important;
+            font-size: 13px !important;
             white-space: normal !important;
-            letter-spacing: -0.01em !important;
-            line-height: 1.4 !important;
+            letter-spacing: 0em !important;
+            line-height: 1.5 !important;
+            opacity: 0.75 !important;
           }
-          /* ④ コピー2行目（L） */
+          /* ④ コピー2行目：主役 */
           .hero-copy-2 {
-            font-size: clamp(30px, 8.5vw, 41px) !important;
-            line-height: 1.1 !important;
+            font-size: clamp(38px, 10vw, 46px) !important;
+            line-height: 1.15 !important;
             white-space: normal !important;
             letter-spacing: -0.02em !important;
           }
+          /* PC では br を非表示 */
+          .sp-br { display: none; }
           /* 専門性見出し：モバイル */
           .hero-gold-band {
             width: 100% !important;
