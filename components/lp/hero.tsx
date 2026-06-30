@@ -76,7 +76,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(24px, 2.1vw, 36px)',
+                fontSize: 'clamp(23px, 2.0vw, 35px)',
                 color: '#1a0a0a',
                 letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
@@ -89,7 +89,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(58px, 4.6vw, 78px)',
+                fontSize: 'clamp(56px, 4.5vw, 76px)',
                 color: '#8E1B1B',
                 letterSpacing: '0.02em',
                 lineHeight: 1.08,
@@ -97,7 +97,7 @@ export function Hero() {
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
                 marginTop: '0.1em',
               }}>
-                売上・業務<br className="sp-br" />に即効！
+                売上・業務に即効！
               </span>
             </h1>
 
@@ -114,7 +114,7 @@ export function Hero() {
               <span style={{
                 fontFamily: '"Noto Sans JP", sans-serif',
                 fontWeight: 600,
-                fontSize: 'clamp(24px, 2.1vw, 36px)',
+                fontSize: 'clamp(23px, 2.0vw, 35px)',
                 color: '#3a2e00',
                 letterSpacing: '0.08em',
                 whiteSpace: 'nowrap',
@@ -322,7 +322,7 @@ export function Hero() {
           .sp-br { display: inline !important; }
           /* ③ コピー1行目：脇役 */
           .hero-copy-1 {
-            font-size: 13px !important;
+            font-size: 12.5px !important;
             white-space: normal !important;
             letter-spacing: 0em !important;
             line-height: 1.5 !important;
@@ -330,7 +330,7 @@ export function Hero() {
           }
           /* ④ コピー2行目：主役 */
           .hero-copy-2 {
-            font-size: clamp(38px, 10vw, 46px) !important;
+            font-size: clamp(37px, 9.7vw, 44px) !important;
             line-height: 1.15 !important;
             white-space: normal !important;
             letter-spacing: -0.02em !important;
