@@ -15,6 +15,7 @@ import { Consultation } from '@/components/lp/consultation'
 import { Faq } from '@/components/lp/faq'
 import { Closing } from '@/components/lp/closing'
 import { Footer } from '@/components/lp/footer'
+import { ScrollToTop } from '@/components/lp/scroll-to-top'
 
 export default function Page() {
   return (
@@ -36,6 +37,7 @@ export default function Page() {
       <Faq />
       <Closing />
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }
