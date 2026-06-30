@@ -101,7 +101,7 @@ export function Hero() {
             </h1>
 
             {/* ゴールド帯 */}
-            <div style={{
+            <div className="hero-gold-band" style={{
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #A07828 0%, #D4AA50 25%, #F0D080 50%, #D4AA50 75%, #A07828 100%)',
               color: '#2a1500',
@@ -283,21 +283,25 @@ export function Hero() {
             padding-top: 1.2rem !important;
             padding-bottom: 0.5rem !important;
             gap: 0.9rem !important;
+            align-items: stretch !important;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
           }
           /* ① バナー：横幅いっぱい */
           .hero-banner {
-            width: calc(100% - 32px) !important;
+            width: 100% !important;
             max-width: 100% !important;
-            margin: 0 auto !important;
+            margin: 0 !important;
           }
           /* ② 赤帯：横幅いっぱい・中央揃え */
           .hero-red-band {
-            width: calc(100% - 32px) !important;
+            width: 100% !important;
             max-width: 100% !important;
             text-align: center !important;
             justify-content: center !important;
             padding: 0.65rem 1rem !important;
             border-radius: 6px !important;
+            box-sizing: border-box !important;
           }
           /* ③ コピー1行目：1行固定 */
           .hero-copy-1 {
@@ -311,6 +315,16 @@ export function Hero() {
             line-height: 1.35 !important;
             white-space: normal !important;
           }
+          /* ゴールド帯：横幅いっぱい・中央揃え */
+          .hero-gold-band {
+            width: 100% !important;
+            max-width: 100% !important;
+            justify-content: center !important;
+            text-align: center !important;
+            box-sizing: border-box !important;
+          }
+          /* CTA外枠：横幅いっぱい */
+          .cta-wrap { width: 100% !important; max-width: 100% !important; }
           /* CTAアイコン非表示 */
           .cta-icon { display: none !important; }
           /* CTA外枠：中央揃え */
