@@ -75,7 +75,7 @@ export function Closing() {
         >
           <MonitorPlay style={{ width: '1.9rem', height: '1.9rem', flexShrink: 0 }} />
           <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '1.05rem', lineHeight: 1.3 }}>
+            <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3 }}>
               無料個別相談を予約する
             </p>
             <p style={{ margin: '0.1rem 0 0', fontSize: '0.73rem', opacity: 0.85 }}>
