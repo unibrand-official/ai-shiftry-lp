@@ -179,7 +179,7 @@ export function Hero() {
             <div className="hero-photo-wrap" style={{
               width: '108%', maxWidth: '477px',
               marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-60px)',
+              transform: 'translateY(-140px)',
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
@@ -198,10 +198,10 @@ export function Hero() {
             <div className="hero-card" style={{
               position: 'absolute',
               bottom: '0',
-              left: '0', right: '0',
+              left: '0', right: '-1.5rem',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
               borderTop: '2px solid #C9A14A',
-              padding: '1.2rem 1.6rem 1.3rem',
+              padding: '1.2rem 1.6rem 1.8rem',
               backdropFilter: 'blur(12px)',
               boxShadow: '0 -6px 30px rgba(0,0,0,0.1)',
               zIndex: 10,
