@@ -2,7 +2,7 @@ import { AlertTriangle } from 'lucide-react'
 
 export function SubsidyHook() {
   return (
-    <section className="relative overflow-hidden bg-beige pb-12 pt-0 sm:pb-16 sm:pt-0" aria-labelledby="subsidy-heading">
+    <section className="relative overflow-hidden bg-beige py-12 sm:py-16" aria-labelledby="subsidy-heading">
       <div className="bg-dot-grid-light pointer-events-none absolute inset-0 opacity-50" aria-hidden="true" />
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center sm:px-6">
         <span className="inline-flex items-center gap-2 rounded-full bg-alert px-4 py-1.5 text-xs font-bold text-navy">
