@@ -73,12 +73,8 @@ export function Closing() {
             transition: 'transform 0.2s ease, box-shadow 0.2s ease',
           }}
         >
-          <span className="cta-icon-closing" style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            width: '40px', height: '40px', borderRadius: '50%',
-            background: 'rgba(255,255,255,0.15)', flexShrink: 0,
-          }}>
-            <MonitorPlay style={{ width: '1.2rem', height: '1.2rem' }} />
+          <span className="cta-icon-closing" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+            <MonitorPlay style={{ width: '1.4rem', height: '1.4rem' }} />
           </span>
           <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3 }}>
