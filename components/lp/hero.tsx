@@ -349,10 +349,10 @@ export function Hero() {
             position: static !important;
             transform: none !important;
             right: 0 !important;
-            width: calc(100% - 32px) !important;
-            margin: 0.5rem 16px 1.5rem !important;
+            width: calc(100% - 16px) !important;
+            margin: 0.5rem 0 1.5rem 16px !important;
             border-radius: 12px !important;
-            padding: 0.7rem 1rem 0.85rem !important;
+            padding: 0.7rem 0 0.85rem 1rem !important;
           }
           .hero-card-badges {
             flex-direction: row !important;
