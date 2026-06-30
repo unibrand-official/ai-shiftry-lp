@@ -177,7 +177,7 @@ export function Hero() {
 
             {/* 女性写真 */}
             <div style={{
-              width: '120%', maxWidth: '530px',
+              width: '108%', maxWidth: '477px',
               marginBottom: '-4px', marginLeft: '3%',
               transform: 'translateY(-60px)',
             }}>
