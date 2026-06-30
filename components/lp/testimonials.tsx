@@ -28,7 +28,7 @@ export async function Testimonials() {
               key={v.id}
               className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
-              <Quote className="size-7 text-electric/40" />
+              <Quote className="size-7 text-gold/50" />
               <blockquote className="text-pretty text-sm leading-relaxed text-card-foreground">
                 {v.body}
               </blockquote>

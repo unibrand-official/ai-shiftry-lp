@@ -33,7 +33,7 @@ export function Reasons() {
               key={r.no}
               className="relative flex flex-col gap-3 rounded-2xl border border-border bg-white p-7 shadow-soft"
             >
-              <span className="font-heading text-5xl font-black text-electric/25">{r.no}</span>
+              <span className="font-heading text-5xl font-black text-gold/30">{r.no}</span>
               <h3 className="text-balance font-heading text-lg font-extrabold leading-snug text-navy">
                 {r.title}
               </h3>

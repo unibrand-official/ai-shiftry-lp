@@ -49,11 +49,11 @@ export function Curriculum() {
               key={s.title}
               className="flex gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6"
             >
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-navy font-heading text-lg font-black text-cyan">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-navy font-heading text-lg font-black text-white">
                 {i + 1}
               </span>
               <div className="flex flex-col gap-1.5">
-                <span className="w-fit rounded-full bg-electric/10 px-3 py-0.5 text-xs font-bold text-electric">
+                <span className="w-fit rounded-full bg-bordeaux/10 px-3 py-0.5 text-xs font-bold text-bordeaux">
                   {s.tag}
                 </span>
                 <h3 className="text-pretty font-heading text-base font-extrabold text-navy sm:text-lg">

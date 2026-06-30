@@ -47,7 +47,7 @@ export function Comparison() {
               <span className="text-xs font-bold text-white sm:text-sm">よくあるAI研修</span>
             </div>
             <div className="bg-navy p-4 text-center">
-              <span className="text-xs font-black text-cyan sm:text-sm">AI SHIFTRY</span>
+              <span className="text-xs font-black text-gold sm:text-sm">AI SHIFTRY</span>
             </div>
 
             {/* rows */}
@@ -70,10 +70,10 @@ export function Comparison() {
                 </div>
                 <div
                   className={`flex items-start gap-2 p-4 text-xs font-medium leading-relaxed text-card-foreground sm:text-sm ${
-                    i % 2 === 0 ? 'bg-success/5' : 'bg-success/10'
+                    i % 2 === 0 ? 'bg-gold/5' : 'bg-gold/10'
                   }`}
                 >
-                  <Check className="mt-0.5 size-4 shrink-0 text-success" />
+                  <Check className="mt-0.5 size-4 shrink-0 text-bordeaux" />
                   <span className="text-pretty">{r.shiftry}</span>
                 </div>
               </div>

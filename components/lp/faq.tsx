@@ -26,10 +26,10 @@ export async function Faq() {
             >
               <summary className="flex cursor-pointer items-start justify-between gap-4">
                 <span className="text-pretty font-heading text-sm font-bold text-navy sm:text-base">
-                  <span className="text-electric">Q. </span>
+                  <span className="text-bordeaux">Q. </span>
                   {f.question}
                 </span>
-                <Plus className="mt-0.5 size-5 shrink-0 text-electric transition-transform duration-200 group-open:rotate-45" />
+                <Plus className="mt-0.5 size-5 shrink-0 text-bordeaux transition-transform duration-200 group-open:rotate-45" />
               </summary>
               <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
                 <span className="font-bold text-success">A. </span>

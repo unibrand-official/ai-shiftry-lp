@@ -37,9 +37,9 @@ export function Steps() {
           {steps.map((s) => (
             <div
               key={s.no}
-              className="flex flex-col gap-2 rounded-2xl border-l-4 border-electric bg-card p-6 shadow-sm"
+              className="flex flex-col gap-2 rounded-2xl border-l-4 border-bordeaux bg-card p-6 shadow-sm"
             >
-              <span className="font-heading text-sm font-black tracking-wide text-electric">{s.no}</span>
+              <span className="font-heading text-sm font-black tracking-wide text-bordeaux">{s.no}</span>
               <h3 className="font-heading text-lg font-extrabold text-navy">{s.title}</h3>
               <p className="text-pretty text-sm leading-relaxed text-muted-foreground">{s.body}</p>
             </div>
