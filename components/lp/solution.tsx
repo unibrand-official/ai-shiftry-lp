@@ -48,7 +48,7 @@ export function Solution() {
           eyebrow="SOLUTION"
           title={
             <span id="solution-heading">
-              だから、<span className="text-electric">“成果から逆算するAI研修”</span>。
+              だから、<span className="text-bordeaux">“成果から逆算するAI研修”</span>。
             </span>
           }
           description="中小企業診断士 × 認定心理士 が、成果が出るまでとなりで伴走。UNIBRANDは、“ツールを教える会社”ではありません。"
@@ -63,18 +63,18 @@ export function Solution() {
                 className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="flex items-center gap-3">
-                  <span className="flex size-12 items-center justify-center rounded-xl bg-navy text-cyan">
+                  <span className="flex size-12 items-center justify-center rounded-xl bg-navy text-gold">
                     <Icon className="size-6" />
                   </span>
                   <div>
-                    <span className="text-xs font-bold text-electric">{p.no} {p.title}</span>
+                    <span className="text-xs font-bold text-bordeaux">{p.no} {p.title}</span>
                     <p className="font-heading text-lg font-extrabold text-navy">{p.headline}</p>
                   </div>
                 </div>
                 <ul className="flex flex-col gap-2">
                   {p.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-2 text-sm leading-relaxed text-card-foreground">
-                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-electric" />
+                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-bordeaux" />
                       {pt}
                     </li>
                   ))}
@@ -84,7 +84,7 @@ export function Solution() {
           })}
         </div>
 
-        <div className="mt-8 rounded-2xl border border-electric/20 bg-accent p-6 text-center">
+        <div className="mt-8 rounded-2xl border border-gold/20 bg-accent p-6 text-center">
           <p className="text-pretty text-sm leading-relaxed text-accent-foreground sm:text-base">
             さらに ─ <span className="font-bold">補助金 × AI研修 × Webサイト制作/マーケ</span>
             まで一気通貫で支援。AI教育だけで終わらず、集客・売上の仕組みづくりまでとなりで。
