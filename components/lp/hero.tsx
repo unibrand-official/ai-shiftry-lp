@@ -211,8 +211,9 @@ export function Hero() {
             {/* プロフィールカード：1カラム・リデザイン */}
             <div className="hero-card" style={{
               position: 'absolute',
-              bottom: '0',
+              bottom: '10%',
               left: '0', right: '-1.5rem',
+              width: '500px',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
               borderTop: '2px solid #C9A14A',
               padding: '0.75rem 0 0.75rem 1.2rem',
