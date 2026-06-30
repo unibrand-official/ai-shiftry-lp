@@ -89,15 +89,15 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(55px, 4.3vw, 75px)',
+                fontSize: 'clamp(58px, 4.6vw, 78px)',
                 color: '#8E1B1B',
-                letterSpacing: '-0.03em',
-                lineHeight: 1.05,
+                letterSpacing: '0.02em',
+                lineHeight: 1.08,
                 whiteSpace: 'nowrap',
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
                 marginTop: '0.1em',
               }}>
-                「売上・業務」<br className="sp-br" />に即効！
+                売上・業務<br className="sp-br" />に即効！
               </span>
             </h1>
 
