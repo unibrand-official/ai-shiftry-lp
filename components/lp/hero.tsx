@@ -61,7 +61,7 @@ export function Hero() {
 
             {/* CTA — 1ボタンに統一 */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxWidth: '480px' }}>
-              <Link href="#contact" className="cta-main" style={{
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6acXFEEhPETbuBP7BP9cjNSWMMg-tMRUqDuEKXMVGQ80xlA/viewform" target="_blank" rel="noopener noreferrer" className="cta-main" style={{
                 display: 'flex', alignItems: 'center', gap: '1rem',
                 borderRadius: '12px',
                 background: 'linear-gradient(135deg, #8E1B1B, #B71C1C)',

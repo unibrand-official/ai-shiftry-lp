@@ -11,7 +11,7 @@ interface CtaButtonProps {
 }
 
 export function CtaButton({
-  href = '#contact',
+  href = 'https://docs.google.com/forms/d/e/1FAIpQLSd6acXFEEhPETbuBP7BP9cjNSWMMg-tMRUqDuEKXMVGQ80xlA/viewform',
   className,
   label = 'まずは無料で「AI業務改善事例10選」を受け取る',
   sub = '御社の課題に合わせた研修プラン＆"40万→実質9万"の使い方をその場でご提案／ご相談だけでもOK',

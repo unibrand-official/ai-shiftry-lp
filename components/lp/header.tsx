@@ -14,7 +14,7 @@ export function Header() {
           </span>
         </Link>
         <Link
-          href="#contact"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd6acXFEEhPETbuBP7BP9cjNSWMMg-tMRUqDuEKXMVGQ80xlA/viewform" target="_blank" rel="noopener noreferrer"
           className="bg-cta-gradient inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:text-sm"
         >
           無料相談
