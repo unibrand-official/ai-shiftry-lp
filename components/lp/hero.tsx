@@ -387,8 +387,8 @@ export function Hero() {
             transform: none !important;
             right: auto !important;
             left: auto !important;
-            width: calc(100% - 32px) !important;
-            margin: 0 16px 1.5rem !important;
+            width: 330px !important;
+            margin: 0 auto 1.5rem !important;
             border-radius: 12px !important;
             padding: 1rem 1.2rem !important;
             box-sizing: border-box !important;
