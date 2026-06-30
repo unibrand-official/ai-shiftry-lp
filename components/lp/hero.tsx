@@ -76,7 +76,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(25px, 2.2vw, 38px)',
+                fontSize: 'clamp(24px, 2.1vw, 36px)',
                 color: '#1a0a0a',
                 letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
@@ -89,7 +89,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(58px, 4.5vw, 79px)',
+                fontSize: 'clamp(55px, 4.3vw, 75px)',
                 color: '#8E1B1B',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.05,
@@ -114,7 +114,7 @@ export function Hero() {
               <span style={{
                 fontFamily: '"Noto Sans JP", sans-serif',
                 fontWeight: 600,
-                fontSize: 'clamp(25px, 2.2vw, 38px)',
+                fontSize: 'clamp(24px, 2.1vw, 36px)',
                 color: '#3a2e00',
                 letterSpacing: '0.08em',
                 whiteSpace: 'nowrap',
@@ -320,14 +320,14 @@ export function Hero() {
           }
           /* ③ コピー1行目（M） */
           .hero-copy-1 {
-            font-size: 16px !important;
+            font-size: 15px !important;
             white-space: normal !important;
             letter-spacing: -0.01em !important;
             line-height: 1.4 !important;
           }
           /* ④ コピー2行目（L） */
           .hero-copy-2 {
-            font-size: clamp(32px, 9vw, 43px) !important;
+            font-size: clamp(30px, 8.5vw, 41px) !important;
             line-height: 1.1 !important;
             white-space: normal !important;
             letter-spacing: -0.02em !important;
