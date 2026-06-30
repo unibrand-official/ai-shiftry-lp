@@ -5,7 +5,7 @@ export function SubsidyHook() {
     <section className="relative overflow-hidden bg-beige py-12 sm:py-16" aria-labelledby="subsidy-heading">
       <div className="bg-dot-grid-light pointer-events-none absolute inset-0 opacity-50" aria-hidden="true" />
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center sm:px-6">
-        <span className="inline-flex items-center gap-2 rounded-full bg-alert px-4 py-1.5 text-xs font-bold text-white">
+        <span className="inline-flex items-center gap-2 rounded-full bg-alert px-4 py-1.5 text-xs font-bold text-navy">
           <AlertTriangle className="size-4" />
           令和8年度末まで・動くなら、早めに
         </span>
