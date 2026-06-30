@@ -102,32 +102,54 @@ export function Hero() {
               </span>
             </h1>
 
-            {/* 専門性見出し：ラインを短く */}
+            {/* 専門性見出し：月桂樹 */}
             <div className="hero-gold-band" style={{
-              display: 'flex', alignItems: 'center', gap: '0.6rem',
-              padding: '0',
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'center',
+              gap: '1rem',
+              padding: '0.5rem 0',
+              maxWidth: '600px',
             }}>
-              <span style={{
-                width: '32px', flexShrink: 0,
-                height: '1px',
-                background: 'linear-gradient(90deg, transparent, rgba(201,161,74,0.6))',
-              }} />
-              <span style={{
-                fontFamily: '"Noto Sans JP", sans-serif',
-                fontWeight: 600,
-                fontSize: 'clamp(20px, 1.8vw, 30px)',
-                color: '#3a2e00',
-                letterSpacing: '0.08em',
-                whiteSpace: 'nowrap',
-                opacity: 0.85,
-              }}>
-                中小企業診断士 × 認定心理士<br className="sp-br" />が教えるAI研修
-              </span>
-              <span style={{
-                width: '32px', flexShrink: 0,
-                height: '1px',
-                background: 'linear-gradient(90deg, rgba(201,161,74,0.6), transparent)',
-              }} />
+              {/* 左月桂樹 */}
+              <Image
+                src="/images/laurel-left.png"
+                alt=""
+                aria-hidden="true"
+                width={60} height={120}
+                style={{ width: 'clamp(36px, 4vw, 56px)', height: 'auto', flexShrink: 0, marginBottom: '-8px', opacity: 0.92 }}
+              />
+              {/* テキスト */}
+              <div style={{ textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                <p style={{
+                  margin: 0,
+                  fontSize: 'clamp(20px, 1.8vw, 30px)',
+                  fontWeight: 700,
+                  color: '#3a1e00',
+                  letterSpacing: '0.06em',
+                  lineHeight: 1.6,
+                }}>
+                  中小企業診断士 × 認定心理士
+                </p>
+                <p style={{
+                  margin: 0,
+                  fontSize: 'clamp(20px, 1.8vw, 30px)',
+                  fontWeight: 700,
+                  color: '#3a1e00',
+                  letterSpacing: '0.06em',
+                  lineHeight: 1.6,
+                }}>
+                  が教える<span style={{ color: '#C9A14A', fontWeight: 900 }}>AI研修</span>
+                </p>
+              </div>
+              {/* 右月桂樹 */}
+              <Image
+                src="/images/laurel-right.png"
+                alt=""
+                aria-hidden="true"
+                width={60} height={120}
+                style={{ width: 'clamp(36px, 4vw, 56px)', height: 'auto', flexShrink: 0, marginBottom: '-8px', opacity: 0.92 }}
+              />
             </div>
 
             {/* CTAボタン */}
@@ -344,20 +366,11 @@ export function Hero() {
           /* 専門性見出し：モバイル */
           .hero-gold-band {
             width: 100% !important;
-            padding: 0.8rem 0 !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
+            padding: 0.5rem 0 !important;
+            gap: 0.5rem !important;
           }
-          .hero-gold-band span:first-child,
-          .hero-gold-band span:last-child {
-            flex: 0 0 20px !important;
-            width: 20px !important;
-          }
-          .hero-gold-band span:nth-child(2) {
+          .hero-gold-band p {
             font-size: 18px !important;
-            white-space: normal !important;
-            text-align: center !important;
-            line-height: 1.5 !important;
           }
           /* CTA外枠：横幅いっぱい */
           .cta-wrap { width: 100% !important; max-width: 100% !important; }
