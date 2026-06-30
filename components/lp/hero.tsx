@@ -37,13 +37,13 @@ export function Hero() {
             display: 'flex',
             flexDirection: 'column',
             gap: '0.85rem',
-            paddingTop: '0.6rem',
+            paddingTop: '0',
             paddingBottom: '1.25rem',
             justifyContent: 'center',
           }}>
 
             {/* バナー */}
-            <div className="hero-banner" style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-4px' }}>
+            <div className="hero-banner" style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-40px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
