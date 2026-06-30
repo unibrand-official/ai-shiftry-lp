@@ -68,11 +68,18 @@ export function Closing() {
             display: 'flex', alignItems: 'center', gap: '1rem',
             borderRadius: '14px', width: '100%', maxWidth: '480px',
             background: 'linear-gradient(135deg, #7A1010 0%, #A82020 50%, #C83030 100%)',
-            color: '#fff', textDecoration: 'none', padding: '0 1.25rem 0 1.5rem',
+            color: '#fff', textDecoration: 'none', padding: '0 1.25rem 0 1.2rem',
             boxShadow: '0 0 0 2px #C9A14A, 0 8px 28px rgba(120,16,16,0.35)',
             transition: 'transform 0.2s ease, box-shadow 0.2s ease',
           }}
         >
+          <span className="cta-icon-closing" style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            width: '40px', height: '40px', borderRadius: '50%',
+            background: 'rgba(255,255,255,0.15)', flexShrink: 0,
+          }}>
+            <MonitorPlay style={{ width: '1.2rem', height: '1.2rem' }} />
+          </span>
           <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3 }}>
               無料個別相談を予約する
@@ -101,6 +108,7 @@ export function Closing() {
           }
           @media (max-width: 768px) {
             .cta-arrow-closing { display: none !important; }
+            .cta-icon-closing { display: none !important; }
           }
         `}</style>
       </div>
