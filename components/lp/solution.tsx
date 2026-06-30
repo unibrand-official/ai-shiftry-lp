@@ -1,9 +1,9 @@
-import { Target, BadgeCheck, HeartHandshake } from 'lucide-react'
+import { Compass, BadgeCheck, HeartHandshake } from 'lucide-react'
 import { SectionHeading } from './section-heading'
 
 const pillars = [
   {
-    icon: Target,
+    icon: Compass,
     no: '①',
     title: '経営視点',
     headline: '診断士が成果から逆算',
