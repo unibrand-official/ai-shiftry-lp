@@ -36,10 +36,12 @@ export function Benefits() {
                 key={b.title}
                 className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm"
               >
-                <span className="flex size-11 items-center justify-center rounded-xl bg-electric/10 text-electric">
-                  <Icon className="size-5" />
-                </span>
-                <h3 className="font-heading text-base font-extrabold text-navy">{b.title}</h3>
+                <div className="flex items-center gap-3">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-bordeaux/10 text-bordeaux">
+                    <Icon className="size-5" />
+                  </span>
+                  <h3 className="font-heading text-base font-extrabold text-navy">{b.title}</h3>
+                </div>
                 <p className="text-pretty text-sm leading-relaxed text-muted-foreground">{b.body}</p>
               </div>
             )
