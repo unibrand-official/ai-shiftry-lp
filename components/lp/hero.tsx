@@ -36,18 +36,18 @@ export function Hero() {
           <div style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '0.75rem',
-            paddingTop: '1.5rem',
-            paddingBottom: '1.5rem',
+            gap: '0.85rem',
+            paddingTop: '1.25rem',
+            paddingBottom: '1.25rem',
             justifyContent: 'center',
           }}>
 
             {/* バナー */}
-            <div style={{ position: 'relative', width: 'clamp(240px, 46vw, 460px)', marginTop: '-8px' }}>
+            <div style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-4px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
-                width={460} height={132} priority
+                width={500} height={143} priority
                 style={{
                   width: '100%', height: 'auto',
                   filter: 'drop-shadow(0 6px 18px rgba(180,120,0,0.35)) drop-shadow(0 2px 6px rgba(0,0,0,0.2))',
@@ -55,15 +55,15 @@ export function Hero() {
               />
             </div>
 
-            {/* 赤帯：ターゲット訴求 */}
+            {/* 赤帯 */}
             <div style={{
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #6B1010 0%, #9B1F1F 40%, #8B1818 100%)',
-              color: '#fff', padding: '0.42rem 1.2rem',
+              color: '#fff', padding: '0.48rem 1.3rem',
               borderRadius: '8px',
               fontFamily: '"Noto Sans JP", sans-serif',
               fontWeight: 700,
-              fontSize: 'clamp(0.65rem, 1.2vw, 0.85rem)',
+              fontSize: 'clamp(0.7rem, 1.3vw, 0.92rem)',
               letterSpacing: '0.04em',
               boxShadow: '0 4px 16px rgba(100,10,10,0.4), inset 0 1px 0 rgba(255,255,255,0.15)',
               maxWidth: 'fit-content',
@@ -77,7 +77,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(1.7rem, 3.6vw, 2.9rem)',
+                fontSize: 'clamp(2.0rem, 4.4vw, 3.4rem)',
                 color: '#1a0a0a',
                 letterSpacing: '-0.01em',
                 textShadow: '0 0 20px rgba(255,255,255,0.9)',
@@ -88,7 +88,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(2.0rem, 4.6vw, 3.7rem)',
+                fontSize: 'clamp(2.4rem, 5.6vw, 4.2rem)',
                 color: '#8E1B1B',
                 letterSpacing: '-0.02em',
                 lineHeight: 1.1,
@@ -104,11 +104,11 @@ export function Hero() {
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #A07828 0%, #D4AA50 25%, #F0D080 50%, #D4AA50 75%, #A07828 100%)',
               color: '#2a1500',
-              padding: '0.55rem 1.75rem',
+              padding: '0.6rem 1.8rem',
               borderRadius: '6px',
               fontFamily: '"Noto Sans JP", sans-serif',
               fontWeight: 700,
-              fontSize: 'clamp(0.72rem, 1.35vw, 0.9rem)',
+              fontSize: 'clamp(0.78rem, 1.5vw, 0.95rem)',
               letterSpacing: '0.08em',
               boxShadow: '0 4px 16px rgba(160,120,40,0.4), inset 0 1px 0 rgba(255,255,255,0.5)',
               maxWidth: 'fit-content',
@@ -117,7 +117,7 @@ export function Hero() {
             </div>
 
             {/* CTAボタン */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', maxWidth: '480px' }}>
+            <div style={{ maxWidth: '500px' }}>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd6acXFEEhPETbuBP7BP9cjNSWMMg-tMRUqDuEKXMVGQ80xlA/viewform"
                 target="_blank" rel="noopener noreferrer"
@@ -131,17 +131,17 @@ export function Hero() {
                   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                 }}
               >
-                <MonitorPlay style={{ width: '1.9rem', height: '1.9rem', flexShrink: 0 }} />
-                <div style={{ flex: 1, padding: '0.85rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
-                  <p style={{ margin: 0, fontWeight: 700, fontSize: 'clamp(0.9rem, 1.7vw, 1.05rem)', lineHeight: 1.3 }}>
+                <MonitorPlay style={{ width: '2rem', height: '2rem', flexShrink: 0 }} />
+                <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                  <p style={{ margin: 0, fontWeight: 700, fontSize: 'clamp(0.95rem, 1.8vw, 1.1rem)', lineHeight: 1.3 }}>
                     無料個別相談を予約する
                   </p>
-                  <p style={{ margin: '0.1rem 0 0', fontSize: '0.72rem', opacity: 0.85, fontWeight: 400 }}>
+                  <p style={{ margin: '0.1rem 0 0', fontSize: '0.73rem', opacity: 0.85, fontWeight: 400 }}>
                     （オンライン30分）
                   </p>
                   <div style={{ marginTop: '0.4rem', paddingTop: '0.4rem', borderTop: '1px solid rgba(255,255,255,0.25)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                     <Gift style={{ width: '0.85rem', height: '0.85rem', flexShrink: 0 }} />
-                    <span style={{ fontSize: '0.72rem', fontWeight: 600 }}>AI活用事例10選（PDF）プレゼント</span>
+                    <span style={{ fontSize: '0.73rem', fontWeight: 600 }}>AI活用事例10選（PDF）プレゼント</span>
                   </div>
                 </div>
                 <span style={{
@@ -174,11 +174,11 @@ export function Hero() {
               />
             </div>
 
-            {/* 女性写真：少し上へ */}
+            {/* 女性写真 */}
             <div style={{
               width: '120%', maxWidth: '530px',
               marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-20px)',
+              transform: 'translateY(-30px)',
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
@@ -193,7 +193,7 @@ export function Hero() {
               />
             </div>
 
-            {/* プロフィールカード */}
+            {/* プロフィールカード：上へ引き上げ */}
             <div style={{
               width: '100%',
               background: 'rgba(255,255,255,0.94)',
@@ -201,7 +201,8 @@ export function Hero() {
               padding: '1rem 1.4rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
-              transform: 'translateY(-20px)',
+              transform: 'translateY(-135px)',
+              marginBottom: '-135px',
             }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', alignItems: 'start' }}>
                 <div>
