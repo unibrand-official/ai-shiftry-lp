@@ -77,9 +77,10 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(2.0rem, 4.4vw, 3.4rem)',
+                fontSize: 'clamp(1.6rem, 3.6vw, 3.0rem)',
                 color: '#1a0a0a',
-                letterSpacing: '-0.01em',
+                letterSpacing: '-0.02em',
+                whiteSpace: 'nowrap',
                 textShadow: '0 0 20px rgba(255,255,255,0.9)',
               }}>
                 学ぶだけで、終わらせない。
