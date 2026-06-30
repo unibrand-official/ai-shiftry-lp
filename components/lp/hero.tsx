@@ -315,7 +315,7 @@ export function Hero() {
             padding: 0.4rem 0.8rem !important;
             border-radius: 4px !important;
             box-sizing: border-box !important;
-            font-size: 13px !important;
+            font-size: 15px !important;
             white-space: normal !important;
             word-break: break-all !important;
           }
