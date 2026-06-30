@@ -137,9 +137,14 @@ export function Hero() {
                   fontWeight: 700,
                   color: '#3a1e00',
                   letterSpacing: '0.06em',
-                  lineHeight: 1.6,
+                  lineHeight: 1.5,
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  justifyContent: 'center',
+                  gap: '0.2em',
                 }}>
-                  が教える<span style={{ color: '#C9A14A', fontWeight: 900 }}>AI研修</span>
+                  <span style={{ fontSize: '60%', color: '#9a8060', fontWeight: 500, letterSpacing: '0.08em' }}>が教える</span>
+                  <span style={{ fontSize: '125%', color: '#C9A14A', fontWeight: 900, letterSpacing: '0.04em' }}>AI研修</span>
                 </p>
               </div>
               {/* 右月桂樹 */}
