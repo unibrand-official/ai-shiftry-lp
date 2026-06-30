@@ -91,10 +91,6 @@ export function Hero() {
                 </span>
               </Link>
 
-              {/* 補足テキスト */}
-              <p style={{ margin: 0, textAlign: 'center', fontSize: '0.75rem', color: '#8E1B1B', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 600, letterSpacing: '0.05em' }}>
-                ✦ 相談者全員にプレゼント ✦
-              </p>
             </div>
           </div>
 
@@ -114,20 +110,20 @@ export function Hero() {
               <p style={{ margin: 0, textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 900, fontSize: '0.72rem', lineHeight: 1.5, color: '#8E1B1B' }}>
                 先着<br /><span style={{ fontSize: '1.5rem', lineHeight: 1 }}>3社</span><br />限定募集！
               </p>
-              {/* 吹き出しの尻尾（右下向き — 指先から吹き出しを指す） */}
+              {/* 吹き出しの尻尾（右下向き） */}
               <div aria-hidden="true" style={{
-                position: 'absolute', bottom: '8px', right: '-12px',
+                position: 'absolute', bottom: '-13px', right: '22px',
                 width: 0, height: 0,
-                borderTop: '10px solid transparent',
-                borderBottom: '10px solid transparent',
-                borderLeft: '14px solid #C9A14A',
+                borderLeft: '10px solid transparent',
+                borderRight: '10px solid transparent',
+                borderTop: '14px solid #C9A14A',
               }} />
               <div aria-hidden="true" style={{
-                position: 'absolute', bottom: '9px', right: '-10px',
+                position: 'absolute', bottom: '-11px', right: '23px',
                 width: 0, height: 0,
-                borderTop: '9px solid transparent',
-                borderBottom: '9px solid transparent',
-                borderLeft: '13px solid #fff',
+                borderLeft: '9px solid transparent',
+                borderRight: '9px solid transparent',
+                borderTop: '13px solid #fff',
               }} />
             </div>
 
