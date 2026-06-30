@@ -311,8 +311,15 @@ export function Hero() {
           }
           /* CTAアイコン非表示 */
           .cta-icon { display: none !important; }
+          /* CTAボタン：中央配置 */
+          .cta-main {
+            width: 100% !important;
+            max-width: 340px !important;
+            margin: 0 auto !important;
+            justify-content: center !important;
+          }
           /* CTA内テキスト中央揃え */
-          .cta-text-wrap { text-align: center !important; }
+          .cta-text-wrap { text-align: center !important; flex: unset !important; }
           /* 右カラム */
           .hero-right {
             position: relative !important;
