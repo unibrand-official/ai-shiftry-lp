@@ -214,8 +214,7 @@ export function Hero() {
               left: '0', right: '-1.5rem',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
               borderTop: '2px solid #C9A14A',
-              padding: '0.7rem 0 0.85rem 1.2rem',
-              marginBottom: '1.2rem',
+              padding: '0.75rem 1.2rem',
               backdropFilter: 'blur(12px)',
               boxShadow: '0 -6px 30px rgba(0,0,0,0.1)',
               zIndex: 10,
@@ -381,11 +380,13 @@ export function Hero() {
           .hero-card {
             position: static !important;
             transform: none !important;
-            right: 0 !important;
-            width: calc(100% - 16px + 1.5rem) !important;
-            margin: 0.5rem -1.5rem 1.5rem 16px !important;
+            right: auto !important;
+            left: auto !important;
+            width: calc(100% - 32px) !important;
+            margin: 0 16px 1.5rem !important;
             border-radius: 12px !important;
-            padding: 0.7rem 0 0.85rem 1rem !important;
+            padding: 1rem 1.2rem !important;
+            box-sizing: border-box !important;
           }
           .hero-card-badges {
             flex-direction: row !important;
