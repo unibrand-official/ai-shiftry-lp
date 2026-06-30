@@ -100,21 +100,32 @@ export function Hero() {
               </span>
             </h1>
 
-            {/* ゴールド帯 */}
+            {/* 専門性見出し */}
             <div className="hero-gold-band" style={{
-              display: 'inline-flex', alignItems: 'center',
-              background: 'linear-gradient(90deg, #A07828 0%, #D4AA50 25%, #F0D080 50%, #D4AA50 75%, #A07828 100%)',
-              color: '#2a1500',
-              padding: '0.6rem 1.8rem',
-              borderRadius: '6px',
-              fontFamily: '"Noto Sans JP", sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(0.78rem, 1.5vw, 0.95rem)',
-              letterSpacing: '0.08em',
-              boxShadow: '0 4px 16px rgba(160,120,40,0.4), inset 0 1px 0 rgba(255,255,255,0.5)',
-              maxWidth: 'fit-content',
+              display: 'flex', alignItems: 'center', gap: '0.75rem',
+              padding: '1.6rem 0',
             }}>
-              中小企業診断士 × 認定心理士が教えるAI研修
+              <span style={{
+                flex: 1,
+                height: '1px',
+                background: 'linear-gradient(90deg, transparent, rgba(201,161,74,0.7))',
+              }} />
+              <span style={{
+                fontFamily: '"Noto Sans JP", sans-serif',
+                fontWeight: 700,
+                fontSize: 'clamp(0.82rem, 1.4vw, 1.05rem)',
+                color: '#1a1400',
+                letterSpacing: '0.06em',
+                whiteSpace: 'nowrap',
+                textShadow: '0 0 16px rgba(255,255,255,0.9)',
+              }}>
+                中小企業診断士 × 認定心理士が教えるAI研修
+              </span>
+              <span style={{
+                flex: 1,
+                height: '1px',
+                background: 'linear-gradient(90deg, rgba(201,161,74,0.7), transparent)',
+              }} />
             </div>
 
             {/* CTAボタン */}
@@ -315,13 +326,14 @@ export function Hero() {
             line-height: 1.35 !important;
             white-space: normal !important;
           }
-          /* ゴールド帯：横幅いっぱい・中央揃え */
+          /* 専門性見出し：モバイル */
           .hero-gold-band {
             width: 100% !important;
-            max-width: 100% !important;
-            justify-content: center !important;
-            text-align: center !important;
-            box-sizing: border-box !important;
+            padding: 1.2rem 0 !important;
+          }
+          .hero-gold-band span:first-child,
+          .hero-gold-band span:last-child {
+            flex: 0 0 24px !important;
           }
           /* CTA外枠：横幅いっぱい */
           .cta-wrap { width: 100% !important; max-width: 100% !important; }
