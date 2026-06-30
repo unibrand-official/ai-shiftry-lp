@@ -36,7 +36,7 @@ export function Hero() {
           <div className="hero-left" style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '1.4rem',
+            gap: '1.8rem',
             paddingTop: '2rem',
             paddingBottom: '2rem',
             justifyContent: 'center',
@@ -104,7 +104,7 @@ export function Hero() {
             {/* 専門性見出し：ラインを短く */}
             <div className="hero-gold-band" style={{
               display: 'flex', alignItems: 'center', gap: '0.6rem',
-              padding: '0.4rem 0',
+              padding: '0',
             }}>
               <span style={{
                 width: '32px', flexShrink: 0,
