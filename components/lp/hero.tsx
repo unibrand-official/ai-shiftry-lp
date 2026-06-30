@@ -222,16 +222,21 @@ export function Hero() {
                     株式会社UNIBRAND 代表取締役
                   </p>
                 </div>
-                <div className="hero-card-badges" style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                <div className="hero-card-badges" style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', justifyContent: 'center' }}>
                   {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
                     <span key={label} style={{
-                      display: 'flex', alignItems: 'center', gap: '0.3rem',
-                      padding: '4px 10px', border: '1px solid #D4A94B',
-                      borderRadius: '999px', background: '#fffaf4',
-                      color: '#7A1010', fontWeight: 700, fontSize: '0.62rem',
+                      display: 'inline-flex', alignItems: 'center', gap: '0.25rem',
+                      padding: '3px 8px',
+                      border: '0.5px solid rgba(201,161,74,0.6)',
+                      borderRadius: '3px',
+                      background: 'linear-gradient(90deg, rgba(255,250,240,0.9), rgba(255,248,232,0.9))',
+                      color: '#7a6020',
+                      fontWeight: 600,
+                      fontSize: '0.6rem',
                       fontFamily: '"Noto Sans JP", sans-serif',
+                      letterSpacing: '0.04em',
                     }}>
-                      ✓ {label}
+                      <span style={{ color: '#C9A14A', fontSize: '0.55rem' }}>◆</span>{label}
                     </span>
                   ))}
                 </div>
