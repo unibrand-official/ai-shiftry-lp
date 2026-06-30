@@ -94,7 +94,7 @@ export function Hero() {
           <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
 
             {/* 吹き出しアイコン */}
-            <div style={{ position: 'absolute', top: '100px', left: '-30px', zIndex: 20, width: '190px', height: '190px' }}>
+            <div style={{ position: 'absolute', top: '80px', left: '-30px', zIndex: 20, width: '181px', height: '181px' }}>
               <Image
                 src="/images/icon_only3.png"
                 alt="先着3社限定募集"
