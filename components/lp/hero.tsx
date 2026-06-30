@@ -194,53 +194,70 @@ export function Hero() {
               />
             </div>
 
-            {/* プロフィールカード：絶対配置 */}
+            {/* プロフィールカード：1カラム・リデザイン */}
             <div className="hero-card" style={{
               position: 'absolute',
               bottom: '0',
               left: '0', right: '0',
-              background: 'rgba(255,255,255,0.94)',
-              borderTop: '3px solid #C9A14A',
-              padding: '1.4rem 1.6rem',
-              backdropFilter: 'blur(8px)',
-              boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
+              borderTop: '2px solid #C9A14A',
+              padding: '1.2rem 1.6rem 1.3rem',
+              backdropFilter: 'blur(12px)',
+              boxShadow: '0 -6px 30px rgba(0,0,0,0.1)',
               zIndex: 10,
             }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', alignItems: 'start' }}>
-                <div>
-                  <span style={{
-                    display: 'inline-block', background: '#0D1B45', color: '#C9A14A',
-                    fontSize: '0.58rem', fontWeight: 700, padding: '2px 8px', borderRadius: '4px',
-                    fontFamily: '"Noto Sans JP", sans-serif', marginBottom: '0.25rem',
-                  }}>監修・提供</span>
-                  <p style={{ margin: 0, fontFamily: '"Noto Serif JP", serif', fontWeight: 700, fontSize: '1.15rem', color: '#0D1B45', lineHeight: 1.2 }}>
-                    栢原 陽子
-                  </p>
-                  <p style={{ margin: '0.1rem 0 0', fontSize: '0.58rem', color: '#666', fontFamily: '"Noto Sans JP", sans-serif' }}>
-                    （かやはら ようこ）
-                  </p>
-                  <p style={{ margin: '0.25rem 0 0', fontSize: '0.62rem', fontWeight: 700, color: '#333', fontFamily: '"Noto Sans JP", sans-serif' }}>
-                    株式会社UNIBRAND 代表取締役
-                  </p>
-                </div>
-                <div className="hero-card-badges" style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', justifyContent: 'center' }}>
-                  {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
-                    <span key={label} style={{
-                      display: 'inline-flex', alignItems: 'center', gap: '0.25rem',
-                      padding: '3px 8px',
-                      border: '0.5px solid rgba(201,161,74,0.6)',
-                      borderRadius: '3px',
-                      background: 'linear-gradient(90deg, rgba(255,250,240,0.9), rgba(255,248,232,0.9))',
-                      color: '#7a6020',
-                      fontWeight: 600,
-                      fontSize: '0.6rem',
-                      fontFamily: '"Noto Sans JP", sans-serif',
-                      letterSpacing: '0.04em',
-                    }}>
-                      <span style={{ color: '#C9A14A', fontSize: '0.55rem' }}>◆</span>{label}
-                    </span>
-                  ))}
-                </div>
+              {/* 監修・提供ラベル */}
+              <p style={{
+                margin: '0 0 0.4rem',
+                fontSize: '0.6rem', fontWeight: 700,
+                color: '#C9A14A', letterSpacing: '0.15em',
+                fontFamily: '"Noto Sans JP", sans-serif',
+                textTransform: 'uppercase',
+              }}>監修・提供</p>
+
+              {/* 名前 */}
+              <p style={{
+                margin: 0,
+                fontFamily: '"Noto Serif JP", serif',
+                fontWeight: 900, fontSize: '1.4rem',
+                color: '#0D1B45', lineHeight: 1.1,
+                letterSpacing: '0.05em',
+              }}>栢原 陽子</p>
+              <p style={{
+                margin: '0.2rem 0 0',
+                fontSize: '0.62rem', color: '#999',
+                fontFamily: '"Noto Sans JP", sans-serif',
+              }}>（かやはら ようこ）</p>
+
+              {/* 役職 */}
+              <p style={{
+                margin: '0.3rem 0 0.8rem',
+                fontSize: '0.68rem', fontWeight: 700, color: '#444',
+                fontFamily: '"Noto Sans JP", sans-serif',
+                borderBottom: '1px solid rgba(201,161,74,0.25)',
+                paddingBottom: '0.8rem',
+              }}>株式会社UNIBRAND 代表取締役</p>
+
+              {/* 資格タグ：横並び折り返し */}
+              <div className="hero-card-badges" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
+                  <span key={label} style={{
+                    display: 'inline-flex', alignItems: 'center',
+                    height: '26px',
+                    padding: '0 10px',
+                    border: '1px solid rgba(201,161,74,0.5)',
+                    borderRadius: '999px',
+                    background: 'rgba(255,250,240,0.9)',
+                    color: '#7a6020',
+                    fontWeight: 600,
+                    fontSize: '0.6rem',
+                    fontFamily: '"Noto Sans JP", sans-serif',
+                    letterSpacing: '0.03em',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {label}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
