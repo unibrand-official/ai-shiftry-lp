@@ -90,7 +90,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(50px, 4.2vw, 69px)',
+                fontSize: 'clamp(58px, 4.8vw, 79px)',
                 color: '#8E1B1B',
                 letterSpacing: '0.02em',
                 lineHeight: 1.08,
