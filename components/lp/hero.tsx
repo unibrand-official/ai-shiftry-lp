@@ -121,7 +121,7 @@ export function Hero() {
                 whiteSpace: 'nowrap',
                 opacity: 0.85,
               }}>
-                中小企業診断士 × 認定心理士が教えるAI研修
+                中小企業診断士 × 認定心理士<br className="sp-br" />が教えるAI研修
               </span>
               <span style={{
                 width: '32px', flexShrink: 0,
@@ -323,11 +323,13 @@ export function Hero() {
           .sp-br { display: inline !important; }
           /* ③ コピー1行目：脇役 */
           .hero-copy-1 {
-            font-size: 12.5px !important;
+            font-size: 18px !important;
             white-space: normal !important;
             letter-spacing: 0em !important;
             line-height: 1.5 !important;
             opacity: 0.75 !important;
+            text-align: center !important;
+            margin-bottom: 0 !important;
           }
           /* ④ コピー2行目：主役 */
           .hero-copy-2 {
@@ -335,8 +337,9 @@ export function Hero() {
             line-height: 1.15 !important;
             white-space: normal !important;
             letter-spacing: -0.02em !important;
+            text-align: center !important;
           }
-          /* PC では br を非表示 */
+          /* PC では sp-br を非表示 */
           .sp-br { display: none; }
           /* 専門性見出し：モバイル */
           .hero-gold-band {
@@ -351,9 +354,10 @@ export function Hero() {
             width: 20px !important;
           }
           .hero-gold-band span:nth-child(2) {
-            font-size: 13px !important;
+            font-size: 18px !important;
             white-space: normal !important;
             text-align: center !important;
+            line-height: 1.5 !important;
           }
           /* CTA外枠：横幅いっぱい */
           .cta-wrap { width: 100% !important; max-width: 100% !important; }
