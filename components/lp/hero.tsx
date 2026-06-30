@@ -43,7 +43,7 @@ export function Hero() {
           }}>
 
             {/* バナー：15%縮小 */}
-            <div className="hero-banner" style={{ width: 'clamp(200px, 38vw, 400px)', marginTop: '-30px' }}>
+            <div className="hero-banner" style={{ width: 'clamp(210px, 40vw, 420px)', marginTop: '-30px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
@@ -81,6 +81,7 @@ export function Hero() {
                 letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
                 lineHeight: 1.5,
+                marginBottom: '15px',
                 textShadow: '0 0 20px rgba(255,255,255,0.9)',
               }}>
                 学ぶだけで、終わらせない。
@@ -89,7 +90,7 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(48px, 4.0vw, 66px)',
+                fontSize: 'clamp(50px, 4.2vw, 69px)',
                 color: '#8E1B1B',
                 letterSpacing: '0.02em',
                 lineHeight: 1.08,
