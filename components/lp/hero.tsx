@@ -59,74 +59,75 @@ export function Hero() {
             <Image src="/images/laurel-stats.png" alt="導入実績12万人以上・最大75%補助・実質9万円〜" width={460} height={150}
               style={{ width: '100%', maxWidth: '440px', height: 'auto' }} />
 
-            {/* CTA① メイン */}
-            <Link href="#contact" className="cta-main" style={{
-              display: 'flex', alignItems: 'center', gap: '1rem',
-              height: '96px', borderRadius: '999px',
-              background: 'linear-gradient(135deg, #8E1B1B, #B71C1C)',
-              color: '#fff', textDecoration: 'none', padding: '0 1.5rem 0 1.75rem',
-              boxShadow: '0 6px 24px rgba(142,27,27,0.45)',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              maxWidth: '480px',
-            }}>
-              <MonitorPlay style={{ width: '1.8rem', height: '1.8rem', flexShrink: 0 }} />
-              <span style={{ flex: 1, fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 700, fontSize: 'clamp(0.85rem, 1.6vw, 1.05rem)', lineHeight: 1.3 }}>
-                まずは無料の個別相談<br />
-                <span style={{ fontSize: '0.75em', fontWeight: 400, opacity: 0.85 }}>（オンライン30分）</span>
-              </span>
-              <span style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                width: '40px', height: '40px', borderRadius: '50%',
-                background: 'rgba(255,255,255,0.25)', flexShrink: 0,
+            {/* CTA — 1ボタンに統一 */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxWidth: '480px' }}>
+              <Link href="#contact" className="cta-main" style={{
+                display: 'flex', alignItems: 'center', gap: '1rem',
+                borderRadius: '12px',
+                background: 'linear-gradient(135deg, #8E1B1B, #B71C1C)',
+                color: '#fff', textDecoration: 'none', padding: '0 1.5rem 0 1.75rem',
+                boxShadow: '0 6px 24px rgba(142,27,27,0.45)',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
               }}>
-                <ChevronRight style={{ width: '1.1rem', height: '1.1rem' }} />
-              </span>
-            </Link>
+                <MonitorPlay style={{ width: '1.8rem', height: '1.8rem', flexShrink: 0 }} />
+                <div style={{ flex: 1, padding: '1rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                  <p style={{ margin: 0, fontWeight: 700, fontSize: 'clamp(0.95rem, 1.8vw, 1.1rem)', lineHeight: 1.3 }}>
+                    無料個別相談を予約する
+                  </p>
+                  <p style={{ margin: '0.15rem 0 0', fontSize: '0.75rem', opacity: 0.85, fontWeight: 400 }}>
+                    （オンライン30分）
+                  </p>
+                  <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    <Gift style={{ width: '0.9rem', height: '0.9rem', flexShrink: 0 }} />
+                    <span style={{ fontSize: '0.75rem', fontWeight: 600 }}>AI活用事例10選（PDF）プレゼント</span>
+                  </div>
+                </div>
+                <span style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  width: '36px', height: '36px', borderRadius: '50%',
+                  background: 'rgba(255,255,255,0.25)', flexShrink: 0,
+                }}>
+                  <ChevronRight style={{ width: '1rem', height: '1rem' }} />
+                </span>
+              </Link>
 
-            {/* CTA② サブ */}
-            <Link href="#contact" className="cta-sub" style={{
-              display: 'flex', alignItems: 'center', gap: '0.75rem',
-              minHeight: '64px', borderRadius: '999px',
-              background: '#fff', color: '#3a1a00',
-              border: '2px solid #C9A14A',
-              textDecoration: 'none', padding: '0 1.5rem 0 1.75rem',
-              boxShadow: '0 2px 12px rgba(201,161,74,0.2)',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              maxWidth: '480px',
-            }}>
-              <Gift style={{ width: '1.4rem', height: '1.4rem', flexShrink: 0, color: '#C9A14A' }} />
-              <span style={{ flex: 1, fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 700, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', lineHeight: 1.4 }}>
-                今なら無料相談者全員に<br />
-                <span style={{ color: '#8E1B1B' }}>「AI活用事例集10選（PDF）」</span>をプレゼント！
-              </span>
-              <span style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                width: '32px', height: '32px', borderRadius: '50%',
-                background: '#C9A14A', flexShrink: 0,
-              }}>
-                <ChevronRight style={{ width: '0.9rem', height: '0.9rem', color: '#fff' }} />
-              </span>
-            </Link>
+              {/* 補足テキスト */}
+              <p style={{ margin: 0, textAlign: 'center', fontSize: '0.75rem', color: '#8E1B1B', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 600, letterSpacing: '0.05em' }}>
+                ✦ 相談者全員にプレゼント ✦
+              </p>
+            </div>
           </div>
 
           {/* ====== RIGHT ====== */}
           <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
 
-            {/* 吹き出し — 指先付近 */}
+            {/* 吹き出し — 指先の左側（人物の左、指が向いている方向） */}
             <div style={{
-              position: 'absolute', top: '90px', left: '-40px', zIndex: 20,
-              background: '#fff', borderRadius: '50%',
-              width: '120px', height: '120px',
+              position: 'absolute', top: '120px', left: '-60px', zIndex: 20,
+              background: '#fff',
+              borderRadius: '50%',
+              width: '130px', height: '130px',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.18)',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
+              border: '2px solid #C9A14A',
             }}>
-              <p style={{ margin: 0, textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 900, fontSize: '0.7rem', lineHeight: 1.4, color: '#8E1B1B' }}>
-                先着<br /><span style={{ fontSize: '1.4rem' }}>3社</span><br />限定 募集！
+              <p style={{ margin: 0, textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 900, fontSize: '0.72rem', lineHeight: 1.5, color: '#8E1B1B' }}>
+                先着<br /><span style={{ fontSize: '1.5rem', lineHeight: 1 }}>3社</span><br />限定募集！
               </p>
+              {/* 吹き出しの尻尾（右下向き — 指先から吹き出しを指す） */}
               <div aria-hidden="true" style={{
-                position: 'absolute', bottom: '-10px', left: '50%', transform: 'translateX(-50%)',
+                position: 'absolute', bottom: '8px', right: '-12px',
                 width: 0, height: 0,
-                borderLeft: '10px solid transparent', borderRight: '10px solid transparent', borderTop: '10px solid #fff',
+                borderTop: '10px solid transparent',
+                borderBottom: '10px solid transparent',
+                borderLeft: '14px solid #C9A14A',
+              }} />
+              <div aria-hidden="true" style={{
+                position: 'absolute', bottom: '9px', right: '-10px',
+                width: 0, height: 0,
+                borderTop: '9px solid transparent',
+                borderBottom: '9px solid transparent',
+                borderLeft: '13px solid #fff',
               }} />
             </div>
 
@@ -141,60 +142,66 @@ export function Hero() {
               />
             </div>
 
-            {/* プロフィールカード */}
+            {/* プロフィールカード — シンプル版 */}
             <div style={{
               width: '100%', background: 'rgba(255,255,255,0.93)',
               borderTop: '3px solid #C9A14A',
-              padding: '32px', minHeight: '220px',
+              padding: '1.25rem 1.5rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
-              display: 'flex', flexDirection: 'column', gap: '0.75rem',
             }}>
-              {/* 上段：左名前 / 右バッジ */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', alignItems: 'start' }}>
-                {/* 左：名前・役職 */}
+              {/* 上段：名前 + バッジ */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', alignItems: 'start' }}>
+                {/* 左：名前 */}
                 <div>
                   <span style={{
                     display: 'inline-block', background: '#0D1B45', color: '#C9A14A',
-                    fontSize: '0.65rem', fontWeight: 700, padding: '2px 10px', borderRadius: '4px',
-                    fontFamily: '"Noto Sans JP", sans-serif', marginBottom: '0.4rem',
+                    fontSize: '0.6rem', fontWeight: 700, padding: '2px 8px', borderRadius: '4px',
+                    fontFamily: '"Noto Sans JP", sans-serif', marginBottom: '0.3rem',
                   }}>監修・提供</span>
-                  <p style={{ margin: 0, fontFamily: '"Noto Serif JP", serif', fontWeight: 700, fontSize: '1.3rem', color: '#0D1B45', lineHeight: 1.2 }}>
+                  <p style={{ margin: 0, fontFamily: '"Noto Serif JP", serif', fontWeight: 700, fontSize: '1.2rem', color: '#0D1B45', lineHeight: 1.2 }}>
                     栢原 陽子
                   </p>
-                  <p style={{ margin: '0.1rem 0 0', fontSize: '0.65rem', fontWeight: 400, color: '#666', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                  <p style={{ margin: '0.1rem 0 0', fontSize: '0.6rem', color: '#666', fontFamily: '"Noto Sans JP", sans-serif' }}>
                     （かやはら ようこ）
                   </p>
-                  <p style={{ margin: '0.35rem 0 0', fontSize: '0.72rem', fontWeight: 700, color: '#333', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                  <p style={{ margin: '0.3rem 0 0', fontSize: '0.65rem', fontWeight: 700, color: '#333', fontFamily: '"Noto Sans JP", sans-serif' }}>
                     株式会社UNIBRAND 代表取締役
                   </p>
                 </div>
+
                 {/* 右：資格バッジ */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
                   {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
                     <span key={label} style={{
-                      display: 'inline-block', padding: '6px 14px',
-                      border: '1px solid #D4A94B', borderRadius: '999px',
-                      background: '#fffaf4', color: '#7A1010',
-                      fontWeight: 700, fontSize: '0.7rem',
+                      display: 'flex', alignItems: 'center', gap: '0.3rem',
+                      padding: '5px 12px', border: '1px solid #D4A94B',
+                      borderRadius: '999px', background: '#fffaf4',
+                      color: '#7A1010', fontWeight: 700, fontSize: '0.65rem',
                       fontFamily: '"Noto Sans JP", sans-serif',
-                      textAlign: 'center',
                     }}>
-                      🏅 {label}
+                      ✓ {label}
                     </span>
                   ))}
                 </div>
               </div>
 
-              {/* 下段：説明文 */}
-              <p style={{
-                margin: 0, fontSize: '0.7rem', color: '#444', lineHeight: 1.7,
-                fontFamily: '"Noto Sans JP", sans-serif',
-                borderTop: '1px solid #E8C97A', paddingTop: '0.65rem',
+              {/* 下段：実績2行 */}
+              <div style={{
+                marginTop: '0.75rem', paddingTop: '0.65rem',
+                borderTop: '1px solid #E8C97A',
+                display: 'flex', gap: '1rem',
               }}>
-                中小企業診断士が、業務効率・売上UPの観点から、AI導入を伴走します。「ツールの使い方」ではなく"成果から逆算"。<br />
-                累計500社超の経営支援と、補助金採択率80%超・累計5,000万円超の知見で伴走します。
-              </p>
+                {['累計500社超の経営支援実績', '補助金採択率80%超'].map((text) => (
+                  <p key={text} style={{
+                    margin: 0, fontSize: '0.68rem', fontWeight: 700, color: '#8E1B1B',
+                    fontFamily: '"Noto Sans JP", sans-serif',
+                    display: 'flex', alignItems: 'center', gap: '0.25rem',
+                  }}>
+                    <span style={{ color: '#C9A14A' }}>✦</span> {text}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -202,7 +209,6 @@ export function Hero() {
 
       <style>{`
         .cta-main:hover { transform: translateY(-3px) !important; box-shadow: 0 15px 40px rgba(0,0,0,0.25) !important; }
-        .cta-sub:hover { transform: translateY(-3px) !important; box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important; }
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; }
         }
