@@ -33,7 +33,7 @@ export function Hero() {
         }}>
 
           {/* ====== LEFT ====== */}
-          <div style={{
+          <div className="hero-left" style={{
             display: 'flex',
             flexDirection: 'column',
             gap: '0.85rem',
@@ -43,7 +43,7 @@ export function Hero() {
           }}>
 
             {/* バナー */}
-            <div style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-4px' }}>
+            <div className="hero-banner" style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-4px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
@@ -73,7 +73,7 @@ export function Hero() {
 
             {/* メインコピー */}
             <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.3 }}>
-              <span style={{
+              <span className="hero-copy-1" style={{
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
@@ -85,7 +85,7 @@ export function Hero() {
               }}>
                 学ぶだけで、終わらせない。
               </span>
-              <span style={{
+              <span className="hero-copy-2" style={{
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
@@ -157,7 +157,7 @@ export function Hero() {
           </div>
 
           {/* ====== RIGHT ====== */}
-          <div style={{
+          <div className="hero-right" style={{
             position: 'relative',
             display: 'flex',
             flexDirection: 'column',
@@ -166,7 +166,7 @@ export function Hero() {
           }}>
 
             {/* 吹き出しアイコン */}
-            <div style={{ position: 'absolute', top: '60px', left: '-10px', zIndex: 20, width: '160px', height: '160px' }}>
+            <div className="hero-bubble" style={{ position: 'absolute', top: '60px', left: '-10px', zIndex: 20, width: '160px', height: '160px' }}>
               <Image
                 src="/images/icon_only3.png"
                 alt="先着3社限定募集"
@@ -176,7 +176,7 @@ export function Hero() {
             </div>
 
             {/* 女性写真 */}
-            <div style={{
+            <div className="hero-photo-wrap" style={{
               width: '108%', maxWidth: '477px',
               marginBottom: '-4px', marginLeft: '3%',
               transform: 'translateY(-420px)',
@@ -195,7 +195,7 @@ export function Hero() {
             </div>
 
             {/* プロフィールカード：上へ引き上げ */}
-            <div style={{
+            <div className="hero-card" style={{
               width: '100%',
               background: 'rgba(255,255,255,0.94)',
               borderTop: '3px solid #C9A14A',
@@ -222,7 +222,7 @@ export function Hero() {
                     株式会社UNIBRAND 代表取締役
                   </p>
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                <div className="hero-card-badges" style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
                   {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
                     <span key={label} style={{
                       display: 'flex', alignItems: 'center', gap: '0.3rem',
@@ -247,7 +247,61 @@ export function Hero() {
           box-shadow: 0 0 0 2px #C9A14A, 0 16px 40px rgba(120,16,16,0.45) !important;
         }
         @media (max-width: 768px) {
-          .hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; }
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            min-height: auto !important;
+          }
+          .hero-left {
+            padding-top: 1rem !important;
+            padding-bottom: 0 !important;
+            gap: 0.75rem !important;
+          }
+          .hero-banner { width: clamp(200px, 80vw, 340px) !important; }
+          .hero-copy-1 {
+            font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+            white-space: normal !important;
+          }
+          .hero-copy-2 {
+            font-size: clamp(42px, 10vw, 64px) !important;
+            line-height: 1.15 !important;
+            white-space: normal !important;
+          }
+          .hero-right {
+            position: relative !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            padding-top: 2.5rem !important;
+          }
+          .hero-photo-wrap {
+            width: 100% !important;
+            max-width: 280px !important;
+            margin: 0 auto !important;
+            transform: none !important;
+            margin-bottom: 0 !important;
+          }
+          .hero-bubble {
+            position: absolute !important;
+            top: 0px !important;
+            left: 50% !important;
+            transform: translateX(-130px) !important;
+            width: 120px !important;
+            height: 120px !important;
+            z-index: 20 !important;
+          }
+          .hero-card {
+            position: static !important;
+            transform: none !important;
+            margin-bottom: 0 !important;
+            width: calc(100% - 32px) !important;
+            margin: 0 16px 1.5rem !important;
+            border-radius: 12px !important;
+          }
+          .hero-card-badges {
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            gap: 0.4rem !important;
+          }
         }
       `}</style>
     </section>
