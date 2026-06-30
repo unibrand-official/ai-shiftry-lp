@@ -143,8 +143,8 @@ export function Hero() {
                   justifyContent: 'center',
                   gap: '0.2em',
                 }}>
-                  <span style={{ fontSize: '60%', color: '#9a8060', fontWeight: 500, letterSpacing: '0.08em' }}>が教える</span>
-                  <span style={{ fontSize: '125%', color: '#C9A14A', fontWeight: 900, letterSpacing: '0.04em' }}>AI研修</span>
+                  <span style={{ fontSize: '60%', color: '#9a8060', fontWeight: 500, letterSpacing: '0.06em' }}>が教える</span>
+                  <span style={{ fontSize: '125%', color: '#C9A14A', fontWeight: 900, letterSpacing: '0.06em' }}>AI研修</span>
                 </p>
               </div>
               {/* 右月桂樹 */}
@@ -373,6 +373,7 @@ export function Hero() {
             width: 100% !important;
             padding: 0.5rem 0 !important;
             gap: 0.5rem !important;
+            justify-content: center !important;
           }
           .hero-gold-band p {
             font-size: 18px !important;
