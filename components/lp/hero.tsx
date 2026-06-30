@@ -37,7 +37,7 @@ export function Hero() {
             display: 'flex',
             flexDirection: 'column',
             gap: '0.85rem',
-            paddingTop: '1.25rem',
+            paddingTop: '0.6rem',
             paddingBottom: '1.25rem',
             justifyContent: 'center',
           }}>
