@@ -63,7 +63,7 @@ export function Hero() {
               borderRadius: '8px',
               fontFamily: '"Noto Sans JP", sans-serif',
               fontWeight: 700,
-              fontSize: 'clamp(0.7rem, 1.3vw, 0.92rem)',
+              fontSize: 'clamp(14px, 1.2vw, 18px)',
               letterSpacing: '0.04em',
               boxShadow: '0 4px 16px rgba(100,10,10,0.4), inset 0 1px 0 rgba(255,255,255,0.15)',
               maxWidth: 'fit-content',
@@ -77,10 +77,11 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(1.6rem, 3.6vw, 3.0rem)',
+                fontSize: 'clamp(24px, 3vw, 42px)',
                 color: '#1a0a0a',
                 letterSpacing: '-0.02em',
                 whiteSpace: 'nowrap',
+                lineHeight: 1.4,
                 textShadow: '0 0 20px rgba(255,255,255,0.9)',
               }}>
                 学ぶだけで、終わらせない。
@@ -89,14 +90,14 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(2.4rem, 5.6vw, 4.2rem)',
+                fontSize: 'clamp(56px, 7vw, 88px)',
                 color: '#8E1B1B',
                 letterSpacing: '-0.02em',
-                lineHeight: 1.3,
+                lineHeight: 1.1,
                 whiteSpace: 'nowrap',
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
               }}>
-                「売上・業務」に<span style={{ fontSize: '108%' }}>即効！</span>
+                「売上・業務」に即効！
               </span>
             </h1>
 
@@ -113,7 +114,7 @@ export function Hero() {
               <span style={{
                 fontFamily: '"Noto Sans JP", sans-serif',
                 fontWeight: 700,
-                fontSize: 'clamp(0.82rem, 1.4vw, 1.05rem)',
+                fontSize: 'clamp(24px, 3vw, 42px)',
                 color: '#1a1400',
                 letterSpacing: '0.06em',
                 whiteSpace: 'nowrap',
@@ -313,16 +314,17 @@ export function Hero() {
             border-radius: 6px !important;
             box-sizing: border-box !important;
           }
-          /* ③ コピー1行目：1行固定 */
+          /* ③ コピー1行目（中サイズ）：1行固定 */
           .hero-copy-1 {
-            font-size: clamp(28px, 7vw, 42px) !important;
+            font-size: clamp(20px, 5vw, 28px) !important;
             white-space: nowrap !important;
-            letter-spacing: -0.03em !important;
+            letter-spacing: -0.02em !important;
+            line-height: 1.4 !important;
           }
-          /* ④ コピー2行目：行間に余裕 */
+          /* ④ コピー2行目（大サイズ） */
           .hero-copy-2 {
-            font-size: clamp(36px, 9vw, 56px) !important;
-            line-height: 1.35 !important;
+            font-size: clamp(40px, 11vw, 56px) !important;
+            line-height: 1.1 !important;
             white-space: normal !important;
           }
           /* 専門性見出し：モバイル */
