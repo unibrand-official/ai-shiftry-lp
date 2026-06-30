@@ -105,9 +105,9 @@ export function Hero() {
             {/* 専門性見出し：月桂樹 */}
             <div className="hero-gold-band" style={{
               display: 'flex',
-              alignItems: 'flex-end',
-              justifyContent: 'center',
-              gap: '1rem',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              gap: '0.75rem',
               padding: '0.5rem 0',
               maxWidth: '600px',
             }}>
@@ -117,7 +117,7 @@ export function Hero() {
                 alt=""
                 aria-hidden="true"
                 width={60} height={120}
-                style={{ width: 'clamp(36px, 4vw, 56px)', height: 'auto', flexShrink: 0, marginBottom: '-8px', opacity: 0.92 }}
+                style={{ width: 'clamp(24px, 2.8vw, 38px)', height: 'auto', flexShrink: 0, opacity: 0.92 }}
               />
               {/* テキスト */}
               <div style={{ textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif' }}>
@@ -153,7 +153,7 @@ export function Hero() {
                 alt=""
                 aria-hidden="true"
                 width={60} height={120}
-                style={{ width: 'clamp(36px, 4vw, 56px)', height: 'auto', flexShrink: 0, marginBottom: '-8px', opacity: 0.92 }}
+                style={{ width: 'clamp(24px, 2.8vw, 38px)', height: 'auto', flexShrink: 0, opacity: 0.92 }}
               />
             </div>
 
