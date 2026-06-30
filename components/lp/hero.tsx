@@ -118,7 +118,7 @@ export function Hero() {
             </div>
 
             {/* CTAボタン */}
-            <div style={{ maxWidth: '500px' }}>
+            <div className="cta-wrap" style={{ maxWidth: '500px' }}>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd6acXFEEhPETbuBP7BP9cjNSWMMg-tMRUqDuEKXMVGQ80xlA/viewform"
                 target="_blank" rel="noopener noreferrer"
@@ -311,11 +311,17 @@ export function Hero() {
           }
           /* CTAアイコン非表示 */
           .cta-icon { display: none !important; }
+          /* CTA外枠：中央揃え */
+          .cta-wrap {
+            width: 100% !important;
+            max-width: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+          }
           /* CTAボタン：中央配置 */
           .cta-main {
             width: 100% !important;
             max-width: 340px !important;
-            margin: 0 auto !important;
             justify-content: center !important;
           }
           /* CTA内テキスト中央揃え */

@@ -73,7 +73,6 @@ export function Closing() {
             transition: 'transform 0.2s ease, box-shadow 0.2s ease',
           }}
         >
-          <MonitorPlay style={{ width: '1.9rem', height: '1.9rem', flexShrink: 0 }} />
           <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3 }}>
               無料個別相談を予約する
