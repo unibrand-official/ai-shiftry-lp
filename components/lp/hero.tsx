@@ -202,8 +202,8 @@ export function Hero() {
               padding: '1.4rem 1.6rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
-              transform: 'translateY(-220px)',
-              marginBottom: '-220px',
+              transform: 'translateY(-290px)',
+              marginBottom: '-290px',
             }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', alignItems: 'start' }}>
                 <div>
