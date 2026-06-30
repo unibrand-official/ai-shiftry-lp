@@ -201,7 +201,8 @@ export function Hero() {
               left: '0', right: '-1.5rem',
               background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(255,251,242,0.97) 100%)',
               borderTop: '2px solid #C9A14A',
-              padding: '1.2rem 1.6rem 1.8rem',
+              padding: '0.7rem 1.2rem 0.85rem',
+              marginBottom: '1.2rem',
               backdropFilter: 'blur(12px)',
               boxShadow: '0 -6px 30px rgba(0,0,0,0.1)',
               zIndex: 10,
@@ -344,7 +345,7 @@ export function Hero() {
             width: calc(100% - 32px) !important;
             margin: 0.5rem 16px 1.5rem !important;
             border-radius: 12px !important;
-            padding: 1.2rem !important;
+            padding: 0.7rem 1rem 0.85rem !important;
           }
           .hero-card-badges {
             flex-direction: row !important;
