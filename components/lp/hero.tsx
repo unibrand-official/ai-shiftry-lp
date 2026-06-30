@@ -56,7 +56,7 @@ export function Hero() {
             </div>
 
             {/* 赤帯 */}
-            <div style={{
+            <div className="hero-red-band" style={{
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #6B1010 0%, #9B1F1F 40%, #8B1818 100%)',
               color: '#fff', padding: '0.48rem 1.3rem',
@@ -92,7 +92,7 @@ export function Hero() {
                 fontSize: 'clamp(2.4rem, 5.6vw, 4.2rem)',
                 color: '#8E1B1B',
                 letterSpacing: '-0.02em',
-                lineHeight: 1.1,
+                lineHeight: 1.3,
                 whiteSpace: 'nowrap',
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
               }}>
@@ -132,9 +132,9 @@ export function Hero() {
                   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                 }}
               >
-                <MonitorPlay style={{ width: '2rem', height: '2rem', flexShrink: 0 }} />
-                <div style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
-                  <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3 }}>
+                <MonitorPlay className="cta-icon" style={{ width: '2rem', height: '2rem', flexShrink: 0 }} />
+                <div className="cta-text-wrap" style={{ flex: 1, padding: '0.9rem 0', fontFamily: '"Noto Sans JP", sans-serif' }}>
+                  <p style={{ margin: 0, fontWeight: 700, fontSize: '1.5rem', lineHeight: 1.3, whiteSpace: 'nowrap' }}>
                     無料個別相談を予約する
                   </p>
                   <p style={{ margin: '0.1rem 0 0', fontSize: '0.73rem', opacity: 0.85, fontWeight: 400 }}>
@@ -270,55 +270,81 @@ export function Hero() {
           box-shadow: 0 0 0 2px #C9A14A, 0 16px 40px rgba(120,16,16,0.45) !important;
         }
         @media (max-width: 768px) {
+          /* グリッド */
           .hero-grid {
             grid-template-columns: 1fr !important;
             min-height: auto !important;
           }
+          /* 左カラム */
           .hero-left {
-            padding-top: 1rem !important;
-            padding-bottom: 0 !important;
-            gap: 0.75rem !important;
+            padding-top: 1.2rem !important;
+            padding-bottom: 0.5rem !important;
+            gap: 0.9rem !important;
           }
-          .hero-banner { width: clamp(200px, 80vw, 340px) !important; }
+          /* ① バナー：横幅いっぱい */
+          .hero-banner {
+            width: calc(100% - 32px) !important;
+            max-width: 100% !important;
+            margin: 0 auto !important;
+          }
+          /* ② 赤帯：横幅いっぱい・中央揃え */
+          .hero-red-band {
+            width: calc(100% - 32px) !important;
+            max-width: 100% !important;
+            text-align: center !important;
+            justify-content: center !important;
+            padding: 0.65rem 1rem !important;
+            border-radius: 6px !important;
+          }
+          /* ③ コピー1行目：1行固定 */
           .hero-copy-1 {
-            font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
-            white-space: normal !important;
+            font-size: clamp(28px, 7vw, 42px) !important;
+            white-space: nowrap !important;
+            letter-spacing: -0.03em !important;
           }
+          /* ④ コピー2行目：行間に余裕 */
           .hero-copy-2 {
-            font-size: clamp(42px, 10vw, 64px) !important;
-            line-height: 1.15 !important;
+            font-size: clamp(36px, 9vw, 56px) !important;
+            line-height: 1.35 !important;
             white-space: normal !important;
           }
+          /* CTAアイコン非表示 */
+          .cta-icon { display: none !important; }
+          /* CTA内テキスト中央揃え */
+          .cta-text-wrap { text-align: center !important; }
+          /* 右カラム */
           .hero-right {
             position: relative !important;
             display: flex !important;
             flex-direction: column !important;
             align-items: center !important;
-            padding-top: 2.5rem !important;
+            padding-top: 2rem !important;
           }
           .hero-photo-wrap {
-            width: 100% !important;
-            max-width: 280px !important;
+            width: 85% !important;
+            max-width: 300px !important;
             margin: 0 auto !important;
             transform: none !important;
             margin-bottom: 0 !important;
+            margin-left: auto !important;
           }
           .hero-bubble {
             position: absolute !important;
             top: 0px !important;
-            left: 50% !important;
-            transform: translateX(-130px) !important;
-            width: 120px !important;
-            height: 120px !important;
+            left: 10px !important;
+            transform: none !important;
+            width: 110px !important;
+            height: 110px !important;
             z-index: 20 !important;
           }
           .hero-card {
             position: static !important;
             transform: none !important;
-            margin-bottom: 0 !important;
+            right: 0 !important;
             width: calc(100% - 32px) !important;
-            margin: 0 16px 1.5rem !important;
+            margin: 0.5rem 16px 1.5rem !important;
             border-radius: 12px !important;
+            padding: 1.2rem !important;
           }
           .hero-card-badges {
             flex-direction: row !important;
