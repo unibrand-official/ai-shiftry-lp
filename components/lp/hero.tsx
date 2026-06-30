@@ -28,7 +28,7 @@ export function Hero() {
         <div className="hero-grid" style={{
           display: 'grid',
           gridTemplateColumns: '55% 45%',
-          minHeight: '100vh',
+          minHeight: 'clamp(620px, 85vh, 880px)',
           alignItems: 'stretch',
         }}>
 
@@ -166,7 +166,7 @@ export function Hero() {
           }}>
 
             {/* 吹き出しアイコン */}
-            <div className="hero-bubble" style={{ position: 'absolute', top: '60px', left: '-10px', zIndex: 20, width: '160px', height: '160px' }}>
+            <div className="hero-bubble" style={{ position: 'absolute', bottom: '460px', left: '-10px', zIndex: 20, width: '160px', height: '160px' }}>
               <Image
                 src="/images/icon_only3.png"
                 alt="先着3社限定募集"
@@ -175,11 +175,13 @@ export function Hero() {
               />
             </div>
 
-            {/* 女性写真 */}
+            {/* 女性写真：絶対配置でカードの上から積み上げ */}
             <div className="hero-photo-wrap" style={{
-              width: '108%', maxWidth: '477px',
-              marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-140px)',
+              position: 'absolute',
+              bottom: '140px',
+              left: '3%',
+              width: '100%', maxWidth: '477px',
+              zIndex: 5,
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
@@ -335,18 +337,17 @@ export function Hero() {
             padding-top: 2rem !important;
           }
           .hero-photo-wrap {
-            width: 85% !important;
-            max-width: 300px !important;
+            position: static !important;
+            width: 80% !important;
+            max-width: 280px !important;
             margin: 0 auto !important;
-            transform: none !important;
-            margin-bottom: 0 !important;
-            margin-left: auto !important;
+            bottom: auto !important;
           }
           .hero-bubble {
             position: absolute !important;
+            bottom: auto !important;
             top: 0px !important;
             left: 10px !important;
-            transform: none !important;
             width: 110px !important;
             height: 110px !important;
             z-index: 20 !important;
