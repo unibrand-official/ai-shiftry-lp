@@ -19,7 +19,6 @@ export async function Testimonials() {
         <SectionHeading
           eyebrow="VOICE"
           title={<span id="voices-heading">導入企業の声</span>}
-          description="※掲載は差し替え前提のサンプルです"
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
