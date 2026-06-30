@@ -295,8 +295,8 @@ export function Hero() {
             padding-bottom: 0.5rem !important;
             gap: 0.9rem !important;
             align-items: stretch !important;
-            padding-left: 16px !important;
-            padding-right: 16px !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
           }
           /* ① バナー：横幅いっぱい */
           .hero-banner {
