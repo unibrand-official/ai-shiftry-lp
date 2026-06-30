@@ -50,10 +50,6 @@ export function Hero() {
               <span style={{ color: '#8E1B1B' }}>業務効率化</span>{' × '}<span style={{ color: '#8E1B1B' }}>AI</span>セミナー
             </p>
 
-            {/* 説明文 */}
-            <p style={{ margin: 0, fontFamily: '"Noto Sans JP", sans-serif', fontSize: 'clamp(0.75rem, 1.4vw, 0.9rem)', color: '#3a2a2a' }}>
-              AIを「使える」に変える実践研修
-            </p>
 
             {/* 月桂樹 */}
             <Image src="/images/laurel-stats.png" alt="導入実績12万人以上・最大75%補助・実質9万円〜" width={460} height={150}
