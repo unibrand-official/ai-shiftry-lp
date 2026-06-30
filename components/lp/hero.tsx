@@ -43,7 +43,7 @@ export function Hero() {
           }}>
 
             {/* バナー：15%縮小 */}
-            <div className="hero-banner" style={{ width: 'clamp(210px, 40vw, 420px)', marginTop: '-30px' }}>
+            <div className="hero-banner" style={{ width: '530px', marginTop: '-30px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
@@ -59,7 +59,7 @@ export function Hero() {
             <div className="hero-red-band" style={{
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #6B1010 0%, #9B1F1F 40%, #8B1818 100%)',
-              color: '#fff', padding: '0.35rem 1rem',
+              color: '#fff', padding: '0.35rem 3.3rem',
               borderRadius: '4px',
               fontFamily: '"Noto Sans JP", sans-serif',
               fontWeight: 600,
