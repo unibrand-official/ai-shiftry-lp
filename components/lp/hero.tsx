@@ -36,52 +36,51 @@ export function Hero() {
           <div className="hero-left" style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '0.85rem',
-            paddingTop: '0',
-            paddingBottom: '1.25rem',
+            gap: '1.4rem',
+            paddingTop: '2rem',
+            paddingBottom: '2rem',
             justifyContent: 'center',
           }}>
 
-            {/* バナー */}
-            <div className="hero-banner" style={{ width: 'clamp(260px, 48vw, 500px)', marginTop: '-40px' }}>
+            {/* バナー：15%縮小 */}
+            <div className="hero-banner" style={{ width: 'clamp(200px, 38vw, 400px)', marginTop: '-30px' }}>
               <Image
                 src="/images/banner-jirei.png"
                 alt="無料配布中 AI業務改善事例10選"
                 width={500} height={143} priority
                 style={{
                   width: '100%', height: 'auto',
-                  filter: 'drop-shadow(0 6px 18px rgba(180,120,0,0.35)) drop-shadow(0 2px 6px rgba(0,0,0,0.2))',
+                  filter: 'drop-shadow(0 4px 12px rgba(180,120,0,0.28)) drop-shadow(0 1px 4px rgba(0,0,0,0.15))',
                 }}
               />
             </div>
 
-            {/* 赤帯 */}
+            {/* 赤帯：簡潔・小さく */}
             <div className="hero-red-band" style={{
               display: 'inline-flex', alignItems: 'center',
               background: 'linear-gradient(90deg, #6B1010 0%, #9B1F1F 40%, #8B1818 100%)',
-              color: '#fff', padding: '0.48rem 1.3rem',
-              borderRadius: '8px',
+              color: '#fff', padding: '0.35rem 1rem',
+              borderRadius: '4px',
               fontFamily: '"Noto Sans JP", sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(14px, 1.2vw, 18px)',
-              letterSpacing: '0.04em',
-              boxShadow: '0 4px 16px rgba(100,10,10,0.4), inset 0 1px 0 rgba(255,255,255,0.15)',
+              fontWeight: 600,
+              fontSize: 'clamp(11px, 1vw, 14px)',
+              letterSpacing: '0.06em',
               maxWidth: 'fit-content',
             }}>
-              中小企業の「売上・業務」を劇的に改善したい皆様へ
+              中小企業の売上・業務を劇的に改善したい方へ
             </div>
 
             {/* メインコピー */}
-            <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.3 }}>
+            <h1 id="hero-heading" style={{ margin: 0 }}>
               <span className="hero-copy-1" style={{
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(20px, 2.6vw, 34px)',
+                fontSize: 'clamp(17px, 2.2vw, 28px)',
                 color: '#1a0a0a',
-                letterSpacing: '-0.02em',
+                letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
-                lineHeight: 1.4,
+                lineHeight: 1.5,
                 textShadow: '0 0 20px rgba(255,255,255,0.9)',
               }}>
                 学ぶだけで、終わらせない。
@@ -90,42 +89,43 @@ export function Hero() {
                 display: 'block',
                 fontFamily: '"Noto Serif JP", serif',
                 fontWeight: 900,
-                fontSize: 'clamp(46px, 5.8vw, 72px)',
+                fontSize: 'clamp(42px, 5.2vw, 64px)',
                 color: '#8E1B1B',
-                letterSpacing: '-0.02em',
-                lineHeight: 1.1,
+                letterSpacing: '-0.03em',
+                lineHeight: 1.05,
                 whiteSpace: 'nowrap',
                 textShadow: '0 0 24px rgba(255,255,255,0.85)',
+                marginTop: '0.1em',
               }}>
                 「売上・業務」に即効！
               </span>
             </h1>
 
-            {/* 専門性見出し */}
+            {/* 専門性見出し：ラインを短く */}
             <div className="hero-gold-band" style={{
-              display: 'flex', alignItems: 'center', gap: '0.75rem',
-              padding: '1.6rem 0',
+              display: 'flex', alignItems: 'center', gap: '0.6rem',
+              padding: '0.4rem 0',
             }}>
               <span style={{
-                flex: 1,
+                width: '32px', flexShrink: 0,
                 height: '1px',
-                background: 'linear-gradient(90deg, transparent, rgba(201,161,74,0.7))',
+                background: 'linear-gradient(90deg, transparent, rgba(201,161,74,0.6))',
               }} />
               <span style={{
                 fontFamily: '"Noto Sans JP", sans-serif',
-                fontWeight: 700,
-                fontSize: 'clamp(13px, 1.1vw, 16px)',
-                color: '#1a1400',
-                letterSpacing: '0.06em',
+                fontWeight: 600,
+                fontSize: 'clamp(11px, 1vw, 14px)',
+                color: '#3a2e00',
+                letterSpacing: '0.08em',
                 whiteSpace: 'nowrap',
-                textShadow: '0 0 16px rgba(255,255,255,0.9)',
+                opacity: 0.85,
               }}>
                 中小企業診断士 × 認定心理士が教えるAI研修
               </span>
               <span style={{
-                flex: 1,
+                width: '32px', flexShrink: 0,
                 height: '1px',
-                background: 'linear-gradient(90deg, rgba(201,161,74,0.7), transparent)',
+                background: 'linear-gradient(90deg, rgba(201,161,74,0.6), transparent)',
               }} />
             </div>
 
