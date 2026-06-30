@@ -93,34 +93,14 @@ export function Hero() {
           {/* ====== RIGHT ====== */}
           <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
 
-            {/* 吹き出し — 指先の左側（人物の左、指が向いている方向） */}
-            <div style={{
-              position: 'absolute', top: '120px', left: '-60px', zIndex: 20,
-              background: '#fff',
-              borderRadius: '50%',
-              width: '130px', height: '130px',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
-              border: '2px solid #C9A14A',
-            }}>
-              <p style={{ margin: 0, textAlign: 'center', fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 900, fontSize: '0.72rem', lineHeight: 1.5, color: '#8E1B1B' }}>
-                先着<br /><span style={{ fontSize: '1.5rem', lineHeight: 1 }}>3社</span><br />限定募集！
-              </p>
-              {/* 吹き出しの尻尾（右下向き） */}
-              <div aria-hidden="true" style={{
-                position: 'absolute', bottom: '-13px', right: '22px',
-                width: 0, height: 0,
-                borderLeft: '10px solid transparent',
-                borderRight: '10px solid transparent',
-                borderTop: '14px solid #C9A14A',
-              }} />
-              <div aria-hidden="true" style={{
-                position: 'absolute', bottom: '-11px', right: '23px',
-                width: 0, height: 0,
-                borderLeft: '9px solid transparent',
-                borderRight: '9px solid transparent',
-                borderTop: '13px solid #fff',
-              }} />
+            {/* 吹き出しアイコン */}
+            <div style={{ position: 'absolute', top: '100px', left: '-70px', zIndex: 20, width: '150px', height: '150px' }}>
+              <Image
+                src="/images/icon_only3.png"
+                alt="先着3社限定募集"
+                width={150} height={150}
+                style={{ width: '100%', height: 'auto' }}
+              />
             </div>
 
             {/* 女性写真 */}
