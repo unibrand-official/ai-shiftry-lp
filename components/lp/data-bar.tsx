@@ -18,7 +18,7 @@ const stats = [
 
 export function DataBar() {
   return (
-    <section className="bg-secondary py-10 sm:py-12" aria-label="市場データ">
+    <section className="bg-secondary pb-10 pt-0 sm:pb-12 sm:pt-0" aria-label="市場データ">
       <div className="mx-auto grid max-w-5xl gap-6 px-4 sm:px-6 md:grid-cols-3">
         {stats.map((s) => (
           <div
