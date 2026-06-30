@@ -30,30 +30,63 @@ export function Hero() {
           {/* ====== LEFT ====== */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingTop: '2rem', paddingBottom: '2rem', justifyContent: 'center' }}>
 
-            {/* バナー */}
-            <Image src="/images/banner-jirei.png" alt="無料配布中 AI業務改善事例10選" width={420} height={120} priority
-              style={{ width: 'clamp(200px, 42vw, 400px)', height: 'auto' }} />
+            {/* 上部帯：ターゲット訴求 */}
+            <div style={{
+              display: 'inline-flex', alignItems: 'center',
+              background: 'linear-gradient(90deg, #8E1B1B, #B71C1C)',
+              color: '#fff', padding: '0.45rem 1.25rem',
+              borderRadius: '4px',
+              fontFamily: '"Noto Sans JP", sans-serif',
+              fontWeight: 700,
+              fontSize: 'clamp(0.7rem, 1.4vw, 0.9rem)',
+              letterSpacing: '0.04em',
+              boxShadow: '0 2px 8px rgba(142,27,27,0.3)',
+              maxWidth: 'fit-content',
+            }}>
+              中小企業の「売上・業務」を劇的に改善したい皆様へ
+            </div>
 
             {/* メインコピー */}
-            <h1 id="hero-heading" style={{ margin: 0, lineHeight: 1.25 }}>
-              <span style={{ display: 'block', fontFamily: '"Noto Serif JP", serif', fontWeight: 900, fontSize: 'clamp(2.4rem, 5.5vw, 4rem)', letterSpacing: '-0.01em' }}>
-                <span style={{ fontFamily: '"Cormorant Garamond", "Playfair Display", serif', color: '#8E1B1B', fontStyle: 'italic' }}>ChatGPT</span>
-                <span style={{ color: '#1a0a0a' }}>に</span>
+            <h1 id="hero-heading" style={{ margin: '0.5rem 0 0', lineHeight: 1.35 }}>
+              <span style={{
+                display: 'block',
+                fontFamily: '"Noto Serif JP", serif',
+                fontWeight: 900,
+                fontSize: 'clamp(1.9rem, 4.2vw, 3.2rem)',
+                color: '#1a0a0a',
+                letterSpacing: '-0.01em',
+              }}>
+                学ぶだけで、終わらせない。
               </span>
-              <span style={{ display: 'block', fontFamily: '"Noto Serif JP", serif', fontWeight: 900, fontSize: 'clamp(2.4rem, 5.5vw, 4rem)', color: '#1a0a0a', letterSpacing: '-0.01em' }}>
-                相談で終わってない？
+              <span style={{
+                display: 'block',
+                fontFamily: '"Noto Serif JP", serif',
+                fontWeight: 900,
+                fontSize: 'clamp(2.1rem, 4.8vw, 3.6rem)',
+                color: '#8E1B1B',
+                letterSpacing: '-0.01em',
+                lineHeight: 1.2,
+              }}>
+                「売上・業務」に即効！
               </span>
             </h1>
 
-            {/* サブコピー */}
-            <p style={{ margin: 0, fontFamily: '"Noto Serif JP", serif', fontWeight: 700, fontSize: 'clamp(1.3rem, 3vw, 2rem)', color: '#1a0a0a', lineHeight: 1.2 }}>
-              <span style={{ color: '#8E1B1B' }}>業務効率化</span>{' × '}<span style={{ color: '#8E1B1B' }}>AI</span>セミナー
-            </p>
-
-
-            {/* 月桂樹 */}
-            <Image src="/images/laurel-stats.png" alt="導入実績12万人以上・最大75%補助・実質9万円〜" width={460} height={150}
-              style={{ width: '100%', maxWidth: '440px', height: 'auto' }} />
+            {/* サブコピー：ゴールド帯 */}
+            <div style={{
+              display: 'inline-flex', alignItems: 'center',
+              background: 'linear-gradient(90deg, #C9A14A, #E8C97A, #C9A14A)',
+              color: '#3a2000',
+              padding: '0.55rem 1.5rem',
+              borderRadius: '4px',
+              fontFamily: '"Noto Sans JP", sans-serif',
+              fontWeight: 700,
+              fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)',
+              letterSpacing: '0.06em',
+              boxShadow: '0 2px 8px rgba(201,161,74,0.35)',
+              maxWidth: 'fit-content',
+            }}>
+              中小企業診断士 × 認定心理士が教えるAI研修
+            </div>
 
             {/* CTA — 1ボタンに統一 */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxWidth: '480px' }}>
