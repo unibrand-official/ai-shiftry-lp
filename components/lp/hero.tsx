@@ -178,7 +178,7 @@ export function Hero() {
             <div style={{
               width: '120%', maxWidth: '530px',
               marginBottom: '-4px', marginLeft: '3%',
-              transform: 'translateY(-30px)',
+              transform: 'translateY(-60px)',
             }}>
               <Image
                 src="/images/kayahara_cutout.png"
@@ -201,8 +201,8 @@ export function Hero() {
               padding: '1rem 1.4rem',
               backdropFilter: 'blur(8px)',
               boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
-              transform: 'translateY(-135px)',
-              marginBottom: '-135px',
+              transform: 'translateY(-220px)',
+              marginBottom: '-220px',
             }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', alignItems: 'start' }}>
                 <div>
