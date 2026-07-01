@@ -51,7 +51,7 @@ export function Solution() {
               だから、<span className="text-bordeaux">“成果から逆算するAI研修”</span>。
             </span>
           }
-          description=”中小企業診断士が、成果が出るまでとなりで伴走。UNIBRANDは、”ツールを教える会社”ではありません。”
+          description={'中小企業診断士が、成果が出るまでとなりで伴走。UNIBRANDは、“ツールを教える会社”ではありません。'}
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
