@@ -129,7 +129,7 @@ export function Hero() {
                   letterSpacing: '0.06em',
                   lineHeight: 1.6,
                 }}>
-                  中小企業診断士 × 実務家教員
+                  中小企業診断士 × 教育課程修了講師
                 </p>
                 <p style={{
                   margin: 0,
