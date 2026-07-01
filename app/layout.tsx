@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP, Noto_Serif_JP, Cormorant_Garamond } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const notoSansJP = Noto_Sans_JP({
@@ -71,6 +72,16 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-63YYH8QBSM"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-63YYH8QBSM');
+        `}</Script>
       </body>
     </html>
   )
