@@ -17,25 +17,25 @@ const pillars = [
   {
     icon: BadgeCheck,
     no: '②',
-    title: '補助金が本職',
+    title: '助成金が使えるプログラム',
     headline: '40万→実質9万/名',
     points: [
-      '認定支援機関＝申請まで伴走',
-      '採択率80%超・累計5,000万超',
-      '「サポート有」止まりではない',
-      '令和8年度末まで“今だけ”',
+      '助成金の条件を満たした設計',
+      '一般的なサポートは可能',
+      '提携社労士へのご紹介も可能',
+      '令和8年度末まで利用できる制度',
     ],
   },
   {
     icon: HeartHandshake,
     no: '③',
     title: '続く伴走',
-    headline: '認定心理士が自走まで',
+    headline: '実務家教員養成課程修了の講師が担当',
     points: [
-      '認定心理士の知見で離脱させない',
-      '学んだことを実務に定着させる',
+      '文科省・厚労省認定の養成課程修了',
+      '受講者の興味関心を高める設計',
+      '業務に合わせたカリキュラム設計',
       'つまずいたら、すぐ聞ける',
-      '卒業後はAI顧問でずっととなりに',
     ],
   },
 ]
@@ -51,7 +51,7 @@ export function Solution() {
               だから、<span className="text-bordeaux">“成果から逆算するAI研修”</span>。
             </span>
           }
-          description="中小企業診断士 × 認定心理士 が、成果が出るまでとなりで伴走。UNIBRANDは、“ツールを教える会社”ではありません。"
+          description=”中小企業診断士が、成果が出るまでとなりで伴走。UNIBRANDは、”ツールを教える会社”ではありません。”
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -86,8 +86,8 @@ export function Solution() {
 
         <div className="mt-8 rounded-2xl border border-gold/20 bg-accent p-6 text-center">
           <p className="text-pretty text-sm leading-relaxed text-accent-foreground sm:text-base">
-            さらに ─ <span className="font-bold">補助金 × AI研修 × Webサイト制作/マーケ</span>
-            まで一気通貫で支援。AI教育だけで終わらず、集客・売上の仕組みづくりまでとなりで。
+            さらに ─ <span className="font-bold">助成金 × AI研修 × Webサイト制作/マーケ</span>
+            まで一気通貫で支援。さらにレベルアップを希望される方向けに、継続サポートプランもご用意しています。
           </p>
         </div>
       </div>

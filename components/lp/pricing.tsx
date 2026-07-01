@@ -8,7 +8,7 @@ export function Pricing() {
         <SectionHeading
           eyebrow="PRICING"
           title={<span id="pricing-heading">料金</span>}
-          description="研修は助成金で実質9万円。卒業後はAI顧問 月3万円〜で継続。"
+          description="研修は助成金で実質9万円。卒業後はAI顧問 月5万円〜で継続。"
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -28,20 +28,20 @@ export function Pricing() {
               </span>
             </div>
             <p className="text-[11px] leading-relaxed text-muted-foreground">
-              ※申請は令和8年度（〜2027年3月）末まで。準備期間が必要なため、お早めにご相談ください。助成率・実質額は企業規模や要件・コースにより異なり、審査があり採択を保証しません。最新は公式情報をご確認ください（認定支援機関として申請をサポート）。研修は全10時間。
+              ※申請は令和8年度（〜2027年3月）末まで。準備期間が必要なため、お早めにご相談ください。助成率・実質額は企業規模や要件・コースにより異なり、審査があり採択を保証しません。最新は公式情報をご確認ください。助成金に関する一般的なサポートあり。申請に困った場合は提携社労士をご紹介可能です（別途実費）。研修は全10時間。
             </p>
           </div>
 
           {/* ② AI顧問 */}
           <div className="shadow-soft flex flex-col gap-5 rounded-2xl border border-border bg-secondary/60 p-7">
-            <span className="text-sm font-bold text-electric">② 卒業後｜AI顧問（任意・継続サポート）</span>
+            <span className="text-sm font-bold text-electric">② さらにレベルアップを希望される方向けに（任意・継続サポート）</span>
             <p className="text-sm leading-relaxed text-foreground/70">
               研修後も、となりで。新しいAI活用の相談・最新情報のアップデート・業務改善の壁打ちを、月1回の伴走で継続。「学んで終わり」にしない仕組みです。
             </p>
             <div className="flex flex-col">
               <span className="text-xs text-foreground/70">月額</span>
               <span className="font-heading text-4xl font-black text-navy sm:text-5xl">
-                3万円<span className="text-xl">〜</span>
+                5万円<span className="text-xl">〜</span>
               </span>
             </div>
             <p className="text-[11px] leading-relaxed text-muted-foreground">

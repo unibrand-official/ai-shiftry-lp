@@ -129,7 +129,7 @@ export function Hero() {
                   letterSpacing: '0.06em',
                   lineHeight: 1.6,
                 }}>
-                  中小企業診断士 × 認定心理士
+                  中小企業診断士 × 実務家教員
                 </p>
                 <p style={{
                   margin: 0,
@@ -283,7 +283,7 @@ export function Hero() {
 
               {/* 資格タグ：横並び折り返し */}
               <div className="hero-card-badges" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-                {['中小企業診断士', '認定心理士', '認定支援機関'].map((label) => (
+                {['中小企業診断士', '実務家教員養成課程修了', '認定支援機関'].map((label) => (
                   <span key={label} style={{
                     display: 'inline-flex', alignItems: 'center',
                     height: '26px',

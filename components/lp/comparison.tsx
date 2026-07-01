@@ -13,19 +13,19 @@ const rows = [
     shiftry: '“自社の仕事での使い方”まで落とす',
   },
   {
-    axis: '補助金',
-    common: '「サポート有」止まり・外注頼み',
-    shiftry: '認定支援機関＝本職。申請まで伴走',
+    axis: '助成金',
+    common: '一般的なサポートのみ・外注頼み',
+    shiftry: '助成金が使えるプログラム設計。提携社労士へのご紹介も可能',
   },
   {
     axis: '定着',
     common: '配って終わり・続かない',
-    shiftry: '心理士の知見＋見える化で自走まで',
+    shiftry: '受講者ごとの業務に合わせた設計で現場に定着',
   },
   {
     axis: '卒業後',
     common: '研修が終われば、そこで終わり',
-    shiftry: 'AI顧問でずっととなりに／Web集客まで',
+    shiftry: 'さらにレベルアップを希望される方向けに継続サポートプランあり',
   },
 ]
 
@@ -83,7 +83,7 @@ export function Comparison() {
 
         <p className="mt-6 text-pretty text-center text-sm leading-relaxed text-muted-foreground">
           だから、“学んで終わり”でなく、<span className="font-bold text-navy">“成果が出る”</span>
-          。しかも補助金で実質負担を抑えて始められます。
+          。しかも助成金で実質負担を抑えて始められます。
         </p>
       </div>
     </section>
