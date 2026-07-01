@@ -73,14 +73,14 @@ export default function RootLayout({
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-63YYH8QBSM"
+          src="https://www.googletagmanager.com/gtag/js?id=G-M23MEYZF2F"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-63YYH8QBSM');
+          gtag('config', 'G-M23MEYZF2F');
         `}</Script>
       </body>
     </html>
